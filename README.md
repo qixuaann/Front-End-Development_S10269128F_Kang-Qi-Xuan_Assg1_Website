@@ -4,14 +4,14 @@ Description
 This project explores and documents the features, structure, and functionality of the Lazada e-commerce platform. It analyzes its user interface, navigation, and services to better understand how Lazada caters to its customers in the e-commerce space.
 
 ## Table of Contents
-1. About Lazada
-2. Key Features
-3. Project Objectives
-4. Data and Resources
-5. Usage
-6. Contributing
-7. License
-8. Contact
+1. [About Lazada](#about-lazada)
+2. [Key Features](#key-features)
+3. [Project Objectives](#project-objectives)
+4. [Data and Resources](#data-and-resources)
+5. [Usage](#usage)
+6. [Contributing](#contributing)
+7. [License](#license)
+8. [Contact](#contact)
 
 ## About Lazada
 Lazada is one of the leading e-commerce platforms in Southeast Asia, offering a wide range of products including electronics, fashion, home goods, and more. Established in 2012, Lazada has expanded across several countries, including Singapore, Malaysia, Indonesia, and the Philippines.
