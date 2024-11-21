@@ -10,8 +10,7 @@ This project explores and documents the features, structure, and functionality o
 4. [Data and Resources](#data-and-resources)
 5. [Usage](#usage)
 6. [Contributing](#contributing)
-7. [License](#license)
-8. [Contact](#contact)
+7. [Contact](#contact)
 
 ## About Lazada
 Lazada is one of the leading e-commerce platforms in Southeast Asia, offering a wide range of products including electronics, fashion, home goods, and more. Established in 2012, Lazada has expanded across several countries, including Singapore, Malaysia, Indonesia, and the Philippines.
@@ -74,9 +73,7 @@ bash
 Copy code
 git push origin feature-name
 Open a Pull Request.
-## License
-This project is licensed under the MIT License.
 
 Contact
-GitHub: @your-username
-Email: your.email@example.com
+GitHub: @qixuaann
+Email: s10269128@connect.np.edu.sg
