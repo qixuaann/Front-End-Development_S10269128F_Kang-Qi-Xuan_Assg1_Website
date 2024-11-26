@@ -4,61 +4,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Commerce Homepage</title>
-    <link rel="stylesheet" href="frontpage.css">
+    <title>Lazada.sg</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
     <!-- Top bar -->
     <div class="top-bar">
-        <a href="#">Download</a>
-        <a href="#">Start Selling</a>
-        <span>Follow Us On</span>
-        <a href="#"><i class="facebook"></i></a>
-        <a href="#"><i class="instagram"></i></a>
-        <div class="auth-links">
-            <a href="#">Login</a>
-            <a href="#">Sign Up</a>
+        <a href="#" class="top-link">Download |</a>
+        <a href="#" class="top-link">Start Selling |</a>
+        <span class="top-link">Follow Us On</span>
+        <!-- Social media icons -->
+        <a href="https://www.instagram.com/lazada_sg/?hl=en"><img src="https://static.vecteezy.com/system/resources/previews/019/874/344/non_2x/instagram-apps-icon-free-png.png" alt="Instagram Logo" class="social-icon"></a>
+        <a href="https://www.facebook.com/LazadaSingapore/"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/facebook-app-round-white-icon.png" alt="Facebook Logo" class="social-icon"></a>
+        <a href="login.html" class="login">Login |</a>
+        <a href="signup.html" class="signup">Sign Up</a>
         </div>
     </div>
 
     <!-- Header -->
     <header class="header">
         <div class="logo">
-            <img src="https://via.placeholder.com/50" alt="Lazada Logo">
-            <h1>Lazada</h1>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Lazada_%282019%29.svg" alt="Lazada Logo">
         </div>
         <div class="search-bar">
             <input type="text" placeholder="Search in Lazada">
-            <button><i class="search"></i></button>
-        </div>
-        <div class="cart">
-            <i class="shopping-cart"></i>
+            <button class="search-button">
+                <img src="https://cdn3.iconfinder.com/data/icons/flaticons-1/24/flaticon_search-512.png" alt="Search Icon">
+            </button>
+            <div class="cart">
+                <img src="https://icons.veryicon.com/png/o/commerce-shopping/soft-designer-online-tools-icon/shopping-cart-30.png" alt="Shopping Cart">
+            </div>
         </div>
     </header>
 
     <!-- Main Content -->
     <main class="main-content">
-        <div class="hero-banner">
-            <!-- Placeholder for a large banner -->
+        <section class="banner">
+            <div class="banner-slide active">
+                <img src="https://beebot-sg-knowledgecloud.oss-ap-southeast-1.aliyuncs.com/kc/kc-media/kc-oss-1656992752952-image.png" alt="Discount on Electronics">
+            </div>
+            <div class="banner-slide">
+                <img src="https://laz-img-cdn.alicdn.com/images/ims-web/TB11ESeO8r0gK0jSZFnXXbRRXXa.jpg_1200x1200q75.jpg_.webp" alt="Special Offer on Fashion">
+            </div>
+            <div class="banner-slide">
+                <img src="https://beebot-sg-knowledgecloud.oss-ap-southeast-1.aliyuncs.com/kc/kc-media/kc-oss-1656992752952-image.png" alt="New Arrivals in Home Goods">
+            </div>
+            <div class="banner-controls">
+                <button class="prev" aria-label="Previous slide">&#10094;</button>
+                <button class="next" aria-label="Next slide">&#10095;</button>
+            </div>
+        </section>
+    <div class="categories">
+            <div class="category-item lazmall">
+                <a href="https://example.com/lazmall" target="_blank">
+                    <img src="https://vectorseek.com/wp-content/uploads/2023/09/Lazmall-Logo-Vector.svg-.png" alt="LazMall">
+                    <p>LazMall</p>
+                </a>
+            </div>
+            <div class="category-item redmart">
+                <a href="https://example.com/redmart" target="_blank">
+                    <img src="https://img.alicdn.com/tfs/TB1NbbEPqL7gK0jSZFBXXXZZpXa-564-250.png_.webp" alt="RedMart">
+                    <p>RedMart Online Supermarket</p>
+                </a>
+            </div>
+            <div class="category-item voucher">
+                <a href="https://example.com/vouchers" target="_blank">
+                    <img src="https://icons.veryicon.com/png/o/commerce-shopping/o2o-business-platform/coupon-59.png" alt="Voucher">
+                    <p>Voucher Galore</p>
+                </a>
+            </div>
+    </div>
+    <div class="container">
+        <!-- First square is clickable -->
+        <div class="listing">
+            <a href="listing.html" class="listing-img"><img src="https://via.placeholder.com/200" alt="watch"</a>
+            <h3>Missfox Watch Middle East Top-Selling Product</h3>
+            <p class="price">$185</p>
         </div>
-        <div class="categories">
-            <div class="category-item">
-                <img src="" alt="LazMall">
-                <p>LazMall</p>
-            </div>
-            <div class="category-item">
-                <img src="" alt="RedMart">
-                <p>RedMart Online Supermarket</p>
-            </div>
-            <div class="category-item">
-                <img src="" alt="Voucher">
-                <p>Voucher Galore</p>
-            </div>
+        
+        <!-- Other squares are just for show -->
+        <div class="listing">
+            <a href="listing.html" class="listing-img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOUf9oldRJv1Mas3xdWKWNMQeu_CTDZtzveCnq0_vZMCniPLgcgcnP--LFlbUUgkF8hCU&usqp=CAU" alt="Item 2"></a>
+            <h3>Item 2</h3>
+            <p class="price">$150</p>
         </div>
+        
+        <div class="listing">
+            <img src="https://via.placeholder.com/200" alt="Item 3" class="listing-img">
+            <h3>Item 3</h3>
+            <p class="price">$200</p>
+        </div>
+        
+        <div class="listing">
+            <img src="https://via.placeholder.com/200" alt="Item 4" class="listing-img">
+            <h3>Item 4</h3>
+            <p class="price">$120</p>
+        </div>
+    </div>
+
     </main>
 
-    <script src="script.js"></script>
+
 </body>
 
 </html>
+
