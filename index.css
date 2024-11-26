@@ -1,0 +1,305 @@
+/* Basic reset for styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Top bar with blue background */
+.top-bar {
+    background-color: #001b87; /* Blue color for the top bar */
+    color: #fff;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    font-family: 'Arial', sans-serif; /* Match font to the design */
+    font-size: 15px;
+}
+
+.top-link {
+    color: white;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.social-icon {
+    width: 20px; 
+    height: 20px;
+    margin-top: 5px;
+    margin-left: 4px;
+}
+
+.login {
+    color: white;
+    text-decoration: none;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.signup {
+    color: white;
+    text-decoration: none;
+    margin-left: 2px;
+}
+
+
+/* Header section */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    padding: 20px 40px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    font-family: 'Arial', sans-serif;
+}
+
+.logo {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+}
+
+.logo h1 {
+    font-size: 24px;
+    margin-left: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 8px;
+    font-size: 16px;
+    width: 300px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-button img {
+    width: 24px;
+    height: 24px;
+}
+
+.cart img {
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+}
+
+/* Hero banner */
+.banner {
+    height: 250px;
+    background-color: #e7f3ff; /* Light blue for hero banner */
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+/* Basic reset for styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Banner styling */
+.banner {
+    position: relative;
+    overflow: hidden; /* Hide overflow for the scrolling effect */
+    width: 100%; /* Full width */
+    height: 400px; /* Set a height for the banner */
+}
+
+.banner-slide {
+    display: none; /* Hide all slides by default */
+    opacity: 0; /* Start invisible */
+    transition: opacity 1s ease-in-out; /* Smooth fade effect */
+}
+
+.banner-slide.active {
+    display: block; /* Show active slide */
+    opacity: 1; /* Fully visible */
+}
+
+/* Image styling */
+.banner-slide img {
+    width: 100%; /* Full width for images */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Caption styling */
+.caption {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.banner {
+    position: relative;
+    overflow: hidden; /* Hide overflow to ensure slides don't show outside */
+}
+
+.banner-slide {
+    display: none; /* Hide all slides by default */
+    width: 100%; /* Make slides responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.banner-slide.active {
+    display: block; /* Show the active slide */
+}
+
+.banner-controls {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%); /* Center vertically */
+}
+
+.banner-controls button {
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.banner-controls button:hover {
+    background-color: rgba(255, 255, 255, 1); /* Full opacity on hover */
+}
+
+/* Categories layout */
+.categories {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px; /* Add spacing between the boxes */
+}
+
+.category-item {
+    text-align: center;
+    width: 30%;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for boxes */
+    transition: transform 0.2s ease-in-out;
+}
+
+.category-item:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.category-item img {
+    width: 80px; /* Adjusted size for logos */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.category-item p {
+    font-size: 14px;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* LazMall and RedMart logos alignment */
+.lazmall img,
+.redmart img {
+
+    width: 150px; /* Uniform size */
+    height: auto;
+    margin-bottom: 5px;
+    align-items: flex-start;
+}
+
+.voucher img {
+    width: 150px;
+}
+
+.lazmall,
+.redmart {
+    text-align: left; /* Align logos and text centrally */
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.voucher {
+    text-align: left; /* Align Voucher Galore centrally */
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
+
+.listing {
+    width: 250px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 10px 80px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.listing:hover {
+    transform: scale(1.05);
+}
+
+.listing-img {
+    width: 200px;
+    height: 200px;  
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+h3 {
+    margin-top: 30px;
+    font-size: 18px;
+    color: #333;
+}
+
+.price {
+    margin-top: 5px;
+    font-size: 16px;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .categories {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .category-item {
+        width: 80%;
+    }
+}
+
