@@ -1,41 +1,90 @@
+.top-bar {
+    background-color: white;
+    padding: 15px 0px;
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    width: 100%;
+    max-width: 100%;
+}
+
+.logo img {
+    margin-left: 50px;
+    width: 150px;
+    height: auto;
+}
+
+.signup {
+    color: black;
+    margin-left: 10px;
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.faq {
+    color: navy;
+    margin-left: 1181px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 body {
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
-    background-color: #f4f4f4;
+}
+
+background-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.background_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    max-width: 100%;
 }
 
 .signup-container {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    margin-top: -200px;
     background: #fff;
-    padding: 2rem;
+    padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    z-index: 1;
+    width: 500px;
     text-align: center;
 }
 
-.signup-container h1 {
-    margin-bottom: 1.5rem;
-    color: #333;
-}
-
 .form-group {
-    margin-bottom: 1rem;
+    margin-bottom: 15px;
     text-align: left;
 }
 
 label {
     display: block;
-    margin-bottom: 0.5rem;
-    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #555;
 }
 
 input {
     width: 100%;
-    padding: 0.5rem;
+    padding: 5px;
     margin: 0;
     border: 1px solid #ddd;
     border-radius: 4px;
@@ -43,12 +92,12 @@ input {
 
 button {
     width: 100%;
-    padding: 0.7rem;
+    padding: 12px;
     border: none;
     border-radius: 4px;
     background-color: #007bff;
     color: white;
-    font-size: 1rem;
+    font-size: 16px;
     cursor: pointer;
 }
 
@@ -57,8 +106,8 @@ button:hover {
 }
 
 p {
-    margin-top: 1rem;
-    font-size: 0.9rem;
+    margin-top: 16px;
+    font-size: 14px;
 }
 
 p a {
@@ -68,4 +117,40 @@ p a {
 
 p a:hover {
     text-decoration: underline;
+}
+
+footer {
+    background-color: #ebecf0;
+    color: navy;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    padding: 45px 0px;
+    margin-top: 1000px;
+}
+
+.bottom-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.customercare, .lazada, .customercare a, .lazada a {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-decoration: none;
+    color: navy;
+}
+
+.customercare a:hover, .lazada a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    color: black    
 }
