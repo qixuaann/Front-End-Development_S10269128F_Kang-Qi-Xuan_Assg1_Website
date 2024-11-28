@@ -1,25 +1,19 @@
-
 .top-bar {
     background-color: white; 
-    color: #fff;
-    padding: 10px 10px;
+    padding: 15px 0px;
     display: flex;
     align-items: center;
     font-family: 'Arial', sans-serif; /* Match font to the design */
     font-size: 15px;
-    position: fixed;
+    position: absolute;
+    z-index: 2;
     top: 0;
     width: 100%;
-}
-
-.logo {
-    display: flex;
-    justify-content: center; /* Centers horizontally */
-    align-items: center; /* Centers vertically */
+    max-width:100%;
 }
 
 .logo img {
-    margin-left: 5px;
+    margin-left: 50px;
     width: 150px;
     height: auto;
 }
@@ -28,13 +22,13 @@
     color: black ;
     margin-left: 10px;
     font-size: 25px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     font-family: Arial, Helvetica, sans-serif
 }
 
 .faq {
     color: navy ;
-    margin-left: 1080px;
+    margin-left: 1200px;
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: underline
@@ -42,79 +36,46 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: navy;
     display: flex;
+    justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
 }
 
-customer-container {
-    display: flex;
-    flex-direction: row;
-    bottom: 0;
-}
-
-footer, .login-container {
-    display: flex;
-    flex-direction: column;
-    margin: 50px;
-}
-
-
-footer {
-    background-color: lightgrey;
-    color: navy;
-    font-family: 'Arial', sans-serif;
-    font-size: 15px;
-    text-align: center;
-    padding: 10px 0;
+background-container {
+    position: relative;
     width: 100%;
-    margin-top: auto;
+    height: 100%;
 }
 
-.customer-container {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    bottom: 0;
-}
-
-.customer-1, .customer-2, .customer-1 a, .customer-2 a{
-    width: 45%; 
-    text-decoration: none;
-    color: navy 
-}
-
-.customer-1 a:hover, .customer-2 a:hover {
-    text-decoration: underline;
+.background_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    max-width: 100%
 }
 
 .login-container {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    margin-top: -150px;
     background: #fff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 300px;
+    z-index: 1; 
+    width: 500px;
     text-align: center;
-}
-
-h1 {
-    margin-bottom: 20px;
-    font-size: 24px;
-    color: #333;
-}
-
-.form-group {
-    margin-bottom: 15px;
-    text-align: left;
 }
 
 label {
     display: block;
     margin-bottom: 5px;
     font-size: 14px;
-    color: #555;
+    color: #555;    
 }
 
 input {
@@ -123,7 +84,11 @@ input {
     font-size: 14px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
 }
 
 button {
@@ -148,4 +113,40 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+footer {
+    background-color:  #ebecf0;
+    color: navy;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    padding: 45px 0px;
+    margin-top: 1000px;
+}
+
+.bottom-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.customercare, .lazada, .customercare a, .lazada a {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-decoration: none;
+    color: navy 
+}
+
+.customercare a:hover, .lazada a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    color: black    
 }
