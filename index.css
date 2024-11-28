@@ -94,73 +94,43 @@ body {
     margin-left: 20px;
 }
 
-/* Hero banner */
-.banner {
-    height: 250px;
-    background-color: #e7f3ff; /* Light blue for hero banner */
-    margin-bottom: 20px;
-    border-radius: 8px;
-}
-
-/* Basic reset for styling */
+/* Basic reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Banner styling */
+/* Banner Container */
 .banner {
     position: relative;
-    overflow: hidden; /* Hide overflow for the scrolling effect */
-    width: 100%; /* Full width */
-    height: 400px; /* Set a height for the banner */
+    overflow: hidden;
+    width: 100%;
+    height: 400px;
+    background-color: #e7f3ff; /* Light blue */
+    border-radius: 8px;
+    margin-bottom: 20px;
 }
 
+/* Slides */
 .banner-slide {
-    display: none; /* Hide all slides by default */
-    opacity: 0; /* Start invisible */
-    transition: opacity 1s ease-in-out; /* Smooth fade effect */
+    display: none; /* Hide all slides */
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
 
 .banner-slide.active {
-    display: block; /* Show active slide */
-    opacity: 1; /* Fully visible */
+    display: block;
+    opacity: 1;
 }
 
-/* Image styling */
+/* Image Styling */
 .banner-slide img {
-    width: 100%; /* Full width for images */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%;
+    height: auto;
 }
 
-/* Caption styling */
-.caption {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.banner {
-    position: relative;
-    overflow: hidden; /* Hide overflow to ensure slides don't show outside */
-}
-
-.banner-slide {
-    display: none; /* Hide all slides by default */
-    width: 100%; /* Make slides responsive */
-    height: auto; /* Maintain aspect ratio */
-}
-
-.banner-slide.active {
-    display: block; /* Show the active slide */
-}
-
+/* Controls */
 .banner-controls {
     position: absolute;
     top: 50%;
@@ -168,11 +138,11 @@ body {
     right: 0;
     display: flex;
     justify-content: space-between;
-    transform: translateY(-50%); /* Center vertically */
+    transform: translateY(-50%);
 }
 
 .banner-controls button {
-    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+    background-color: rgba(255, 255, 255, 0.7);
     border: none;
     padding: 10px;
     cursor: pointer;
@@ -181,8 +151,9 @@ body {
 }
 
 .banner-controls button:hover {
-    background-color: rgba(255, 255, 255, 1); /* Full opacity on hover */
+    background-color: rgba(255, 255, 255, 1);
 }
+
 
 /* Categories layout */
 .categories {
