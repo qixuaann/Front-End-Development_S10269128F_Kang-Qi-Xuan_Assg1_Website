@@ -237,18 +237,6 @@ body {
     font-size: 40px;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .categories {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .category-item {
-        width: 80%;
-    }
-}
-
 /* Listings */
 .listings-head {
     font-weight: normal;
