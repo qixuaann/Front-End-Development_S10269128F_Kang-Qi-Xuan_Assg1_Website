@@ -1,0 +1,607 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.top-bar {
+    background-color: #001b87; /* Blue color for the top bar */
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    font-family: 'Arial', sans-serif; /* Match font to the design */
+    font-size: 15px;
+}
+
+.top-link {
+    color: white;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.social-icon {
+    width: 20px; 
+    height: 20px;
+    margin-top: 5px;
+    margin-left: 4px;
+}
+
+.login {
+    color: white;
+    text-decoration: none;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.signup {
+    color: white;
+    text-decoration: none;
+    margin-left: 2px;
+}
+
+body {
+    background-color: #F5F5F5
+}
+
+.header {
+    background-color: white; 
+    padding: 15px 0px;
+    display: flex;
+    align-items: center;
+    font-family: 'Arial', sans-serif; /* Match font to the design */
+    font-size: 15px;
+    position: absolute;
+    bottom:2;
+    width: 100%;
+    max-width:100%;
+}
+
+.logo img {
+    margin-left: 50px;
+    width: 150px;
+    height: auto;
+}
+
+.cart {
+    color: navy ;
+    margin-left: 14px;
+    white-space: nowrap;
+    font-size: 24px;
+    margin-bottom: 8px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.faq {
+    color: navy ;
+    margin-left: 925px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline
+}
+
+/* cart itself */
+
+.cart-container {
+    margin-top: 100px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    margin-bottom: 20px;
+}
+
+.cart-table th, .cart-table td {
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    border: none;
+}
+
+.cart-table th {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #001b87;
+    color: white;
+}
+
+.product-info a, .product-info {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+.product-info img {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.quantity-controls button {
+    background-color: #001b87;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.quantity-controls input {
+    width: 40px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.delete-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Summary Section */
+.summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: white;
+    border: 1px solid #ddd;
+}
+
+.voucher-section input {
+    border: 1px solid #ddd;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.voucher-section button {
+    background-color: #001b87;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+}
+
+.total {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.checkout-btn {
+    background-color: #001b87;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+/* listings first row */
+.listings-head {
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: gray;
+    margin-left: 60px;
+}
+
+.listings {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 10px 40px;
+    margin-left: 40px;
+}
+
+.listing-item {
+    display: block;
+    width: 200px;
+    height: 310px;
+    padding: 15px;
+    background-color: white;
+    text-decoration: none;
+}
+
+.listing-item:hover {
+    box-shadow: 0 8px 16px lightgray;
+}
+
+.listing-item img {
+    width: 230px;
+    height: 200px;
+    margin-top: -15px;    
+    margin-left: -15px;
+    border-radius: 0%;
+}
+
+.listing-content h1, .listing-content a {
+    font-weight: normal;
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    margin-top: -10px;
+}
+
+.listings h1:hover {
+   color: darkcyan;
+}
+
+.listing-content h2 {
+    font-weight: normal;
+    font-size: 16px;
+    color: #f5762a;
+    margin-top: -20px;
+}
+
+.listing-content h3 {
+    font-weight: normal;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    margin-top: -15px;
+}
+
+.listing-content h3 img {
+    background-color: transparent;
+    width: 80px; 
+    height: auto;
+    margin-left: 50px;
+    margin-top: -16px;
+}
+
+.listing-content h4 {
+    font-weight: normal;
+    margin-left: 180px;
+    margin-top: -20px;
+    font-size: 10px;
+    color: #888
+}
+
+.listing-item {
+    font-size: 10px;
+    text-align: bottom;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+
+.listing-item.phone, .listing-item.kpop, .listing-item.kpop2, .listing-item.shirt {
+    margin-left: 20px;
+}
+
+.listing-item.kpop2 h2 {
+    margin-top: -15px;
+}
+
+.listing-item.shirt h2 {
+    margin-top: -15px;
+}
+
+/* listings second row */
+
+.listings2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 10px 40px;
+    margin-left: 40px;
+}
+
+.listing-item {
+    display: block;
+    width: 200px;
+    height: 310px;
+    padding: 15px;
+    background-color: white;
+    text-decoration: none;
+}
+
+.listing-item:hover {
+    box-shadow: 0 8px 16px lightgray;
+}
+
+.listing-item img {
+    width: 230px;
+    height: 200px;
+    margin-top: -15px;    
+    margin-left: -15px;
+    border-radius: 0%;
+}
+
+.listing-content h1, .listing-content a {
+    font-weight: normal;
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    margin-top: -10px;
+}
+
+.listings h1:hover {
+   color: darkcyan;
+}
+
+.listing-content h2 {
+    font-weight: normal;
+    font-size: 16px;
+    color: #f5762a;
+    margin-top: -20px;
+}
+
+.listing-content h3 {
+    font-weight: normal;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    margin-top: -15px;
+}
+
+.listing-content h3 img {
+    background-color: transparent;
+    width: 80px; 
+    height: auto;
+    margin-left: 50px;
+    margin-top: -16px;
+}
+
+.listing-content h4 {
+    font-weight: normal;
+    margin-left: 180px;
+    margin-top: -20px;
+    font-size: 10px;
+    color: #888
+}
+
+.listing-item {
+    font-size: 10px;
+    text-align: bottom;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+
+.listing-item.phone, .listing-item.kpop, .listing-item.kpop2, .listing-item.shirt {
+    margin-left: 20px;
+}
+
+.listing-item.kpop2 h2 {
+    margin-top: -15px;
+}
+
+.listing-item.shirt h2 {
+    margin-top: -15px;
+}
+
+/* listings second row */
+.listings-head {
+    font-weight: normal;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    color:#888;
+    margin-left: 60px;
+}
+.listings {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 10px 40px;
+    margin-left: 40px;
+}
+
+.listing-item {
+    display: block;
+    width: 200px;
+    height: 310px;
+    padding: 15px;
+    background-color: white;
+    text-decoration: none;
+}
+
+.listing-item:hover {
+    box-shadow: 0 8px 16px lightgray;
+}
+
+.listing-item img {
+    width: 230px;
+    height: 200px;
+    margin-top: -15px;    
+    margin-left: -15px;
+    border-radius: 0%;
+}
+
+.listing-content h1, .listing-content a {
+    font-weight: normal;
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    margin-top: -10px;
+}
+
+.listings h1:hover {
+   color: darkcyan;
+}
+
+.listing-content h2 {
+    font-weight: normal;
+    font-size: 16px;
+    color: #f5762a;
+    margin-top: -20px;
+}
+
+.listing-content h3 {
+    font-weight: normal;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    margin-top: -15px;
+}
+
+.listing-content h3 img {
+    background-color: transparent;
+    width: 80px; 
+    height: auto;
+    margin-left: 50px;
+    margin-top: -16px;
+}
+
+.listing-content h4 {
+    font-weight: normal;
+    margin-left: 180px;
+    margin-top: -20px;
+    font-size: 10px;
+    color: #888
+}
+
+.listing-item {
+    font-size: 10px;
+    text-align: bottom;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+
+.listing-item.phone, .listing-item.kpop, .listing-item.kpop2, .listing-item.shirt {
+    margin-left: 20px;
+}
+
+.listing-item.kpop2 h2 {
+    margin-top: -15px;
+}
+
+.listing-item.shirt h2 {
+    margin-top: -15px;
+}
+
+/* listings second row */
+
+.listings-head {
+    font-weight: normal;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    color:#888;
+    margin-left: 60px;
+}
+
+.listings {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 10px 40px;
+    margin-left: 40px;
+}
+
+.listing-item {
+    display: block;
+    width: 200px;
+    height: 310px;
+    padding: 15px;
+    background-color: white;
+    text-decoration: none;
+}
+
+.listing-item:hover {
+    box-shadow: 0 8px 16px lightgray;
+}
+
+.listing-item img {
+    width: 230px;
+    height: 200px;
+    margin-top: -15px;    
+    margin-left: -15px;
+    border-radius: 0%;
+}
+
+.listing-content h1, .listing-content a {
+    font-weight: normal;
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    margin-top: -10px;
+}
+
+.listings h1:hover {
+   color: darkcyan;
+}
+
+.listing-content h2 {
+    font-weight: normal;
+    font-size: 16px;
+    color: #f5762a;
+    margin-top: -20px;
+}
+
+.listing-content h3 {
+    font-weight: normal;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    margin-top: -15px;
+}
+
+.listing-content h3 img {
+    background-color: transparent;
+    width: 80px; 
+    height: auto;
+    margin-left: 50px;
+    margin-top: -16px;
+}
+
+.listing-content h4 {
+    font-weight: normal;
+    margin-left: 180px;
+    margin-top: -20px;
+    font-size: 10px;
+    color: #888
+}
+
+.listing-item {
+    font-size: 10px;
+    text-align: bottom;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+
+.listing-item.phone, .listing-item.kpop, .listing-item.kpop2, .listing-item.shirt {
+    margin-left: 20px;
+}
+
+.listing-item.kpop2 h2 {
+    margin-top: -15px;
+}
+
+.listing-item.shirt h2 {
+    margin-top: -15px;
+}
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .header {
+        padding: 10px 20px;
+    }
+
+    .search-bar input {
+        width: 200px;
+    }
+
+    .categories {
+        padding: 10px;
+    }
+
+    .category-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .listing-item {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .listings {
+        padding: 10px;
+        margin: 10px 0;
+    }
+}
