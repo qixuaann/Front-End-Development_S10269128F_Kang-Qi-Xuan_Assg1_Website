@@ -1,9 +1,10 @@
+/* reset to ensure no gaps */
 body, html {
     margin: 0;
     padding: 0;
 }
 
-/* Top bar with blue background */
+/* the whole header */
 .top-bar {
     background-color: #001b87; /* Blue color for the top bar */
     padding: 10px 15px;
@@ -44,8 +45,6 @@ body {
     background-color: #F5F5F5
 }
 
-
-/* Header section */
 .header {
     display: flex;
     justify-content: space-between;
@@ -99,7 +98,7 @@ body {
     margin-left: 20px;
 }
 
-/* Banner Container */
+/* banner */
 .lazmall-banner img {
     position: relative;
     overflow: hidden;
@@ -210,7 +209,6 @@ body {
 }
 
 /* listings second row */
-
 .listings2 {
     display: flex;
     justify-content: space-between;
@@ -302,236 +300,6 @@ body {
     margin-top: -15px;
 }
 
-/* listings second row */
-.listings-head {
-    font-weight: normal;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 30px;
-    color:#888;
-    margin-left: 60px;
-}
-.listings {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    margin: 10px 40px;
-    margin-left: 40px;
-}
-
-.listing-item {
-    display: block;
-    width: 200px;
-    height: 310px;
-    padding: 15px;
-    background-color: white;
-    text-decoration: none;
-}
-
-.listing-item:hover {
-    box-shadow: 0 8px 16px lightgray;
-}
-
-.listing-item img {
-    width: 230px;
-    height: 200px;
-    margin-top: -15px;    
-    margin-left: -15px;
-    border-radius: 0%;
-}
-
-.listing-content h1, .listing-content a {
-    font-weight: normal;
-    text-decoration: none;
-    color: black;
-    font-size: 12px;
-    margin-top: -10px;
-}
-
-.listings h1:hover {
-   color: darkcyan;
-}
-
-.listing-content h2 {
-    font-weight: normal;
-    font-size: 16px;
-    color: #f5762a;
-    margin-top: -20px;
-}
-
-.listing-content h3 {
-    font-weight: normal;
-    font-size: 12px;
-    display: flex;
-    align-items: center;
-    margin-top: -15px;
-}
-
-.listing-content h3 img {
-    background-color: transparent;
-    width: 80px; 
-    height: auto;
-    margin-left: 50px;
-    margin-top: -16px;
-}
-
-.listing-content h4 {
-    font-weight: normal;
-    margin-left: 180px;
-    margin-top: -20px;
-    font-size: 10px;
-    color: #888
-}
-
-.listing-item {
-    font-size: 10px;
-    text-align: bottom;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #333;
-}
-
-.listing-item.phone, .listing-item.kpop, .listing-item.kpop2, .listing-item.shirt {
-    margin-left: 20px;
-}
-
-.listing-item.kpop2 h2 {
-    margin-top: -15px;
-}
-
-.listing-item.shirt h2 {
-    margin-top: -15px;
-}
-
-/* listings second row */
-
-.listings-head {
-    font-weight: normal;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 30px;
-    color:#888;
-    margin-left: 60px;
-}
-
-.listings {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    margin: 10px 40px;
-    margin-left: 40px;
-}
-
-.listing-item {
-    display: block;
-    width: 200px;
-    height: 310px;
-    padding: 15px;
-    background-color: white;
-    text-decoration: none;
-}
-
-.listing-item:hover {
-    box-shadow: 0 8px 16px lightgray;
-}
-
-.listing-item img {
-    width: 230px;
-    height: 200px;
-    margin-top: -15px;    
-    margin-left: -15px;
-    border-radius: 0%;
-}
-
-.listing-content h1, .listing-content a {
-    font-weight: normal;
-    text-decoration: none;
-    color: black;
-    font-size: 12px;
-    margin-top: -10px;
-}
-
-.listings h1:hover {
-   color: darkcyan;
-}
-
-.listing-content h2 {
-    font-weight: normal;
-    font-size: 16px;
-    color: #f5762a;
-    margin-top: -20px;
-}
-
-.listing-content h3 {
-    font-weight: normal;
-    font-size: 12px;
-    display: flex;
-    align-items: center;
-    margin-top: -15px;
-}
-
-.listing-content h3 img {
-    background-color: transparent;
-    width: 80px; 
-    height: auto;
-    margin-left: 50px;
-    margin-top: -16px;
-}
-
-.listing-content h4 {
-    font-weight: normal;
-    margin-left: 180px;
-    margin-top: -20px;
-    font-size: 10px;
-    color: #888
-}
-
-.listing-item {
-    font-size: 10px;
-    text-align: bottom;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #333;
-}
-
-.listing-item.phone, .listing-item.kpop, .listing-item.kpop2, .listing-item.shirt {
-    margin-left: 20px;
-}
-
-.listing-item.kpop2 h2 {
-    margin-top: -15px;
-}
-
-.listing-item.shirt h2 {
-    margin-top: -15px;
-}
-
-/* Media Queries for responsiveness */
-@media screen and (max-width: 768px) {
-    .header {
-        padding: 10px 20px;
-    }
-
-    .search-bar input {
-        width: 200px;
-    }
-
-    .categories {
-        padding: 10px;
-    }
-
-    .category-item {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .listing-item {
-        width: 100%;
-        margin-left: 0;
-    }
-
-    .listings {
-        padding: 10px;
-        margin: 10px 0;
-    }
-}
-
 @media screen and (max-width: 480px) {
     .header {
         flex-direction: column;
@@ -567,7 +335,7 @@ body {
     }
 }
 
-
+/* footer */
 footer {
     background-color:  #ebecf0;
     color: navy;
