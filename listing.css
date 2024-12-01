@@ -1,4 +1,4 @@
-/* Top bar with blue background */
+/* the whole top bar part */
 .top-bar {
     background-color: #001b87; /* Blue color for the top bar */
     padding: 10px 15px;
@@ -39,8 +39,6 @@ body {
     background-color: #F5F5F5
 }
 
-
-/* Header section */
 .header {
     display: flex;
     justify-content: space-between;
@@ -113,26 +111,74 @@ header.header {
     display: flex;
     flex-wrap: wrap;  /* Allow wrapping for smaller screens */
     max-width: 1200px;
+    height: 420px;
     margin: 20px auto;
     background: white;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    gap: 20px;
 }
 
 .product-image {
-    flex: 1 1 400px;  /* Allow the image section to grow and shrink, with a min-width of 400px */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-height: 400px;
-    padding: 20px;
+    flex: 1 1 400px; /* Adjust flex basis */
+    max-width: 400px; /* Prevent the image section from growing too large */
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px; /* Add spacing between image and thumbnails */
 }
 
 .product-image img {
-    max-height: 400px;
     max-width: 100%;
+    max-height: 400px;
+    object-fit: contain; /* Ensure image doesn't overflow */
+}
+
+/* thumbnail */
+.carousel-thumbnails {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.thumbnail {
+    width: 80px;
+    height: 80px;
     object-fit: cover;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border 0.3s;
+}
+
+
+.thumbnail:hover {
+    border: 2px solid #ff5722; /* Highlight border on hover */
+}
+
+.prev, .next {
+    position: absolute;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    z-index: 2;
+}
+
+.prev {
+    left: 100px;
+    margin-top: 350px;
+}
+
+.next {
+    left: 500px;
+    margin-top: 350px;
+}
+
+.color-options {
+    margin-top: 20px;
 }
 
 .details {
@@ -184,8 +230,8 @@ header.header {
 .color-options {
     position: relative;
     display: flex;
-    margin-left: 100px;
-    margin-top: 15px;
+    margin-left: 540px;
+    margin-top: -200px;
 }
 
 .color-options label {
@@ -203,7 +249,7 @@ header.header {
     border: 1px soldid #ccc
 }
 
-/* Quantity and actions buttons */
+/* qty and actions buttons */
 .label-qty {
     color: navy;
     display: flex;
@@ -214,8 +260,8 @@ header.header {
 .quantity {
     display: flex;
     align-items: center;
-    margin-top: -250px;
-    margin-left: 670px;
+    margin-top: -435px;
+    margin-left: 605px;
 }
 
 .quantity button {
@@ -237,9 +283,9 @@ header.header {
 .actions {
     display: flex;
     flex-direction: row;
-    gap: 10px;
-    margin-left: 600px;
-    margin-top: -90px;
+    gap: 5px;
+    margin-left: 540px;
+    margin-top: 70px;
     justify-content: flex-start;
 }
 
@@ -247,8 +293,9 @@ header.header {
     z-index: 2;
     display: flex;
     align-items: center;
+    height: 40px;
     padding: 5px 50px;
-    margin-bottom: 50px;
+    margin-bottom: 110px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -265,6 +312,21 @@ header.header {
     display: flex;
     background-color: #ff5722;
     color: white;
+}
+
+@media (max-width: 768px) {
+    .product-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-image {
+        max-width: 100%;
+    }
+
+    .details {
+        max-width: 100%;
+    }
 }
 
 /* description of listing */
@@ -336,7 +398,7 @@ header.header {
     transition: background-color 0.3s ease; 
     margin-top: 65px;
     position: absolute;
-    top: 1130px;
+    top: 1175px;
     left: 550px;
 
 }
@@ -599,7 +661,6 @@ header.header {
 .listing-item.shirt h2 {
     margin-top: -15px;
 }
-
 
 /* footer */
 footer {
