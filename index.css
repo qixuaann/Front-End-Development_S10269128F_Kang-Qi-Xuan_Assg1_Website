@@ -1,465 +1,161 @@
-/* listing itself using flexbox */
-.product-container {
-    display: flex;
-    flex-wrap: wrap;  /* Allow wrapping for smaller screens */
-    max-width: 1200px;
-    height: 420px;
-    margin: 20px auto;
-    background: white;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    gap: 20px;
+body {
+    background-color: #F5F5F5;
+    font-family: 'Arial', sans-serif;
 }
 
-.product-image {
-    flex: 1 1 400px; /* Adjust flex basis */
-    max-width: 400px; /* Prevent the image section from growing too large */
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px; /* Add spacing between image and thumbnails */
+/* banner */
+.banner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 450px;
+    background-color: #e7f3ff;
+    border-radius: 8px;
+    margin-bottom: 20px;
 }
 
-.product-image img {
-    max-width: 100%;
-    max-height: 400px;
-    object-fit: contain; /* Ensure image doesn't overflow */
+.banner-slide {
+    display: none;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
 
-/* thumbnail */
-.carousel-thumbnails {
-    display: flex;
-    justify-content: flex-start;
+.banner-slide.active {
+    display: block;
+    opacity: 1;
 }
 
-.thumbnail {
-    width: 80px;
-    height: 80px;
-    object-fit: cover;
-    cursor: pointer;
-    border: 2px solid transparent;
-    transition: border 0.3s;
+.banner-slide img {
+    width: 100%;
+    height: auto;
 }
 
-
-.thumbnail:hover {
-    border: 2px solid #ff5722; /* Highlight border on hover */
-}
-
-.prev, .next {
+.banner-controls {
     position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
+}
+
+.banner-controls button {
+    background-color: rgba(255, 255, 255, 0.7);
     border: none;
     padding: 10px;
     cursor: pointer;
-    font-size: 15px;
-    z-index: 2;
+    font-size: 18px;
+    transition: background-color 0.3s;
 }
 
-.prev {
-    left: 100px;
-    margin-top: 350px;
+.banner-controls button:hover {
+    background-color: rgba(255, 255, 255, 1);
 }
 
-.next {
-    left: 500px;
-    margin-top: 350px;
-}
-
-.color-options {
-    margin-top: 20px;
-}
-
-.details {
-    flex: 2 1 600px;  /* The details section takes more space, with a min-width of 600px */
-    padding-left: 20px;
-    color: navy;
-    display: flex;
-    flex-direction: column;
-}
-
-.details h1 {
-    font-size: 24px;
-    color: #333;
-    margin-top: 0;
-}
-
-
-.shipping {
-    margin-left: 100px;
-}
-
-
-.current-price {
-    color: #ff5722;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.original-price {
-    text-decoration: line-through;
-    color: #888;
-    margin-left: 10px;
-}
-
-.flash-deal {
-    background: #ff5722;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 14px;
-    margin-left: 10px;
-}
-
-.details p {
-    font-size: 14px;
-    margin-top: 10px;
-}
-
-.color-options {
-    position: relative;
-    display: flex;
-    margin-left: 540px;
-    margin-top: -200px;
-}
-
-.color-options label {
-    display: flex;
-    font-size: 14px;
-    color: navy;
-}
-
-.color-options select {
-    display: flex;
-    padding: 5px;
-    font-size: 14px;
-    margin-left: 15px;
-    margin-top: -5px;  
-    border: 1px soldid #ccc
-}
-
-/* qty and actions buttons */
-.label-qty {
-    color: navy;
-    display: flex;
-    position: absolute;
-    font-size: 14px;
-    margin-left:-65px;
-}
-.quantity {
-    display: flex;
-    align-items: center;
-    margin-top: -435px;
-    margin-left: 605px;
-}
-
-.quantity button {
-    font-size: 20px;
-    padding: 0px 2px;
-    background-color: #f1f1f1;
-    border: 1px solid #ccc;
-    cursor: pointer;
-}
-
-.input-box {
-    width: 50px;
-    text-align: center;
-    padding: 5px;
-    font-size: 16px;
-    margin: 0 10px;
-}
-
-.actions {
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
-    margin-left: 540px;
-    margin-top: 70px;
-    justify-content: flex-start;
-}
-
-.actions button {
-    z-index: 2;
-    display: flex;
-    align-items: center;
-    height: 40px;
-    padding: 5px 50px;
-    margin-bottom: 110px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.actions .add-to-cart a, .actions .add-to-cart{
-    display: flex;
-    background-color: #ffc107;
-    text-decoration: none;
-    color: #333;
-}
-
-.actions .buy-now {
-    display: flex;
-    background-color: #ff5722;
-    color: white;
-}
-
-/* description of listing */
-.header-of-desc {
-    display: flex;
-    flex-wrap: wrap;  /* Allow wrapping for smaller screens */
-    max-width: 1000px;
-    max-height: 20px;
-    margin: 0px 90px;
-    background: #F5F5F5;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}  
-
-.header-of-desc h1 {
-    font-size: 20px;
-    margin-top: 0px;
-}
-
-.description-container {
-    display: flex;
-    flex-wrap: wrap;  /* Allow wrapping for smaller screens */
-    overflow: hidden;
-    max-width: 1000px;
-    max-height: 500px;
-    margin: -920px 90px;
-    background: white;
-    padding: 20px;
-    padding-bottom: 80px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.description-container.open {
-    max-height: 100%;
-}
-
-.desc-bulletpoints {
+/* categories (Lazmall + RedMart + Vouchers) */
+.categories {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    font-size: 15px;
+    padding: 20px;
+    margin: 0 40px;
 }
 
-.desc-bulletpoints ul {
-    flex: 1;
-    margin: 0;
-    padding: 0 20px;
+.category-item {
+    display: flex;
+    width: 30%;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px #ddd;
+    margin-right: 10px;
 }
 
-.desc-line {
-    display: block;
+.category-item img {
+    width: 150px;
+    height: auto;
     margin-bottom: 10px;
 }
 
-.images-of-item img {
+.voucher {
     display: flex;
-    width: 1000px;
-    max-height: 400px;
-}
-
-#toggle-button {
-    background-color: transparent;
-    color: blue;            
-    padding: 0px 20px;   
-    font-size: 16px;          
-    border-color: blue;         
-    cursor: pointer;          
-    border-radius: 2px;         
-    transition: background-color 0.3s ease; 
-    margin-top: 65px;
-    position: absolute;
-    top: 1175px;
-    left: 550px;
-
-}
-
-#toggle-button:hover {
-    background-color: blue;
-    color: white;
-}
-
-/* ratings section */
-.header-review-section {
-    display: flex;
-    flex-wrap: wrap;  
-    max-width: 1000px;
-    max-height: 20px;
-    margin: 20px 90px;
-    margin-top: 940px;
-    background: #F5F5F5;
-    padding: 20px;
-}  
-
-.header-review-section h1 {
-    font-size: 20px;
-    margin-top: 0px;
-}
-
-
-.review-container {
-    max-width: 920px;
-    margin: -20px 210px; 
-    display: flex;
-    flex-direction: column;  
-}
-
-.review-card {
-    background: white;
-    margin-left: -120px;
-    padding: 15px;
-}
-
-.review-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;  
-}
-
-.review-rating {
-    font-size: 18px; 
-    color: #FFD700;  
-}
-
-.reviewer-name {
-    font-weight: bold;
-}
-
-.review-date {
-    font-size: 12px;
-    color: #888; 
-    margin: 5px 0;
-}
-
-.review-text {
-    font-size: 14px;
-    margin-top: 10px; 
-}
-
-/* sponsored listings */
-.header-of-sponsored-listings {
-    position: sticky;
-    display: flex;
-    position: sticky;
-    max-width: 140px;
-    max-height: 20px;
-    margin-left: 1150px;
-    margin-top: -60px;
-    background: #F5F5F5;
-    padding: 20px;
-}  
-
-.header-of-sponsored-listings h1 {
-    font-size: 14px;
-    margin-top: 5px;
-}
-
-
-.listing2 {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    margin: 60px 40px;
-    margin-left: 1130px;
-    margin-top: -20px;
-}
-
-.listing-item2 {
-    display: block;
-    width: 150px;
-    height: 250px;
-    padding: 15px;
-    background-color: white;
-    text-decoration: none;
-}
-
-.listing-item2 img {
-    width: 180px;
-    height: 180px;
-    margin-top:-20px;    
-    margin-left: -15px;
-    border-radius: 0%;
-}
-
-.listing-item2:hover {
-    box-shadow: 0 8px 16px lightgray;
-}
-
-.listing-content2 h1, .listing-content2 a {
-    font-weight: normal;
-    text-decoration: none;
-    color: black;
-    font-size: 12px;
-    margin-left: -10px;
-    margin-top: -15px;
-}
-
-.listing2 h1:hover {
-   color: darkcyan;
-}
-
-.listing-content2 h2 {
-    font-weight: normal;
-    font-size: 12px;
-    color: #f5762a;
-    margin-top: -25px;
-    margin-left: -5px;
-}
-
-.listing-content2 h3 {
-    font-weight: normal;
-    font-size: 10px;
-    display: flex;
+    justify-content: flex-start;
     align-items: center;
-    margin-top: -20px;
 }
 
-.listing-content2 h3 img {
-    background-color: transparent;
-    width: 60px; 
-    height: auto;
-    margin-left: 40px;
-    margin-top: -5px;
+.voucher img {
+    margin-left: 220px;
+    margin-top: -90px;
+    width: 125px;
 }
 
-.listing-content2 h4 {
-    font-weight: normal;
-    margin-left: 120px;
+.lazmall-logo {
+    margin-left: 200px;
+    margin-top: -30px;
+}
+
+.redmart-logo {
+    margin-left: 200px;
+    margin-top: -100px;
+}
+
+.voucher-text {
     margin-top: -20px;
-    margin-bottom: 20px;
-    font-size: 10px;
-    color: #888
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.lazmall-text p:hover {
+    color: #c5040b;
+}
+
+.redmart-text p:hover {
+    color: #ee4054;
+}
+
+.voucher-text p:hover {
+    color: #f58523;
+}
+
+.lazmall-text, .redmart-text, .voucher-text {
+    color: black;
+    text-decoration: none;
+}
+
+.category-item.lazmall, .category-item.redmart, .category-item.voucher {
+    text-align: left;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    margin-top: 10px;
+}
+
+.category-item.voucher h1 {
+    font-size: 40px;
 }
 
 /* listings */
 .listings-head {
-    position: absolute;
+    font-weight: normal;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 25px;
-    color:#888;
-    margin-top: 50px;
-    margin-left: 90px; 
+    font-size: 30px;
+    color: #888;
+    margin-left: 60px;
 }
 
 .listings {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    margin: 60px 40px;
-    margin-left: 60px;
-    margin-top: 70px;
+    margin: 10px 40px;
 }
 
 .listing-item {
     display: block;
-    width: 200px;
-    height: 310px;
+    width: 250px;
+    height: 360px;
     padding: 15px;
     background-color: white;
     text-decoration: none;
@@ -470,30 +166,30 @@
 }
 
 .listing-item img {
-    width: 230px;
-    height: 200px;
-    margin-top: -15px;    
+    width: 249px;
+    height: 250px;
+    margin-top: -15px;
     margin-left: -15px;
-    border-radius: 0%;
 }
 
-.listing-content h1, .listing-content a {
+.listing-content h1,
+.listing-content a {
     font-weight: normal;
     text-decoration: none;
     color: black;
     font-size: 12px;
-    margin-top: 10px;
+    margin-top: -4px;
 }
 
 .listings h1:hover {
-   color: darkcyan;
-}
+    color: darkcyan;
+ }
 
 .listing-content h2 {
     font-weight: normal;
     font-size: 16px;
     color: #f5762a;
-    margin-top: -20px;
+    margin-top: -10px;
 }
 
 .listing-content h3 {
@@ -501,154 +197,87 @@
     font-size: 12px;
     display: flex;
     align-items: center;
-    margin-top: -15px;
+    margin-bottom: 8px;
 }
 
 .listing-content h3 img {
-    background-color: transparent;
-    width: 80px; 
+    width: 80px;
     height: auto;
     margin-left: 50px;
-    margin-top: -16px;
+    margin-top: -40px;
 }
 
 .listing-content h4 {
     font-weight: normal;
-    margin-left: 180px;
-    margin-top: -20px;
+    margin-left: 190px;
+    margin-top: -30px;
     font-size: 10px;
-    color: #888
+    color: #888;
 }
 
-.listing-item {
-    font-size: 10px;
-    text-align: bottom;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #333;
-}
-
-.listing-item.phone, .listing-item.kpop, .listing-item.kpop2, .listing-item.shirt {
-    margin-left: 20px;
-}
-
-.listing-item.kpop2 h2 {
-    margin-top: -15px;
-}
-
-.listing-item.shirt h2 {
-    margin-top: -15px;
-}
-
-/* Responsive Styles for Smaller Screens */
-@media (max-width: 768px) {
-    /* General Layout */
-    .top-bar {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .login, .signup {
-        margin: 5px 0;
-    }
-
+/* media queries */
+@media screen and (max-width: 768px) {
     .header {
         flex-direction: column;
         align-items: center;
-        text-align: center;
-    }
-
-    .logo img {
-        width: 120px; /* Shrink logo */
-    }
-
-    .search-bar {
-        flex-direction: column;
     }
 
     .search-bar input {
-        width: 90%;
-        margin-bottom: 10px;
+        width: 100%;
     }
 
-    .cart img {
-        width: 40px;
-        height: 40px;
-    }
-
-    .product-container {
+    .categories {
         flex-direction: column;
         padding: 10px;
     }
 
-    .product-image,
-    .details {
+    .category-item {
         width: 100%;
-        text-align: center;
+        margin-bottom: 15px;
     }
 
-    .details h1 {
-        font-size: 20px;
-    }
-
-    .current-price {
-        font-size: 24px;
-    }
-
-    .flash-deal {
-        font-size: 12px;
-    }
-
-    .description-container {
-        margin: 10px;
+    .listings {
+        flex-direction: column;
         padding: 10px;
     }
 
-    .desc-bulletpoints ul {
-        padding: 0;
-    }
-
-    /* Sponsored Listings */
-    .header-of-sponsored-listings {
-        margin: 20px 0;
-        text-align: center;
-    }
-
-    .listing2 {
-        flex-direction: column;
-        align-items: center;
-        margin: 20px 0;
-    }
-
-    .listing-item2 {
+    .listing-item {
         width: 100%;
+        margin-bottom: 20px;
     }
 }
 
-@media (max-width: 480px) {
-    /* Extra small screens */
-    .search-bar input {
-        font-size: 14px;
+@media screen and (max-width: 480px) {
+    .header {
+        padding: 5px 10px;
     }
 
-    .details h1 {
-        font-size: 18px;
+    .logo img {
+        width: 100px;
     }
 
-    .current-price {
-        font-size: 20px;
+    .banner {
+        height: 140px;
     }
 
-    .product-container {
+    .categories {
         padding: 5px;
     }
 
-    .cart img {
-        width: 30px;
-        height: 30px;
+    .category-item {
+        padding: 10px;
     }
 
-    .listing-item img {
-        width: 100%;
-        height: auto;
+    .listings {
+        padding: 5px;
+    }
+
+    footer {
+        font-size: 12px;
+        padding: 20px 5px;
+    }
+
+    .listing-content h1, .listing-content h2 {
+        font-size: 12px;
     }
 }
