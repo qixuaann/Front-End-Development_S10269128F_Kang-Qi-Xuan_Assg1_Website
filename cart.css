@@ -4,87 +4,24 @@ body, html {
     padding: 0;
 }
 
-/* the whole header part */
-.top-bar {
-    background-color: #001b87; /* Blue color for the top bar */
-    padding: 10px 15px;
-    display: flex;
-    align-items: center;
-    font-family: 'Arial', sans-serif; /* Match font to the design */
-    font-size: 15px;
-}
-
-.top-link {
-    color: white;
-    text-decoration: none;
-    margin-left: 5px;
-}
-
-.social-icon {
-    width: 20px; 
-    height: 20px;
-    margin-top: 5px;
-    margin-left: 4px;
-}
-
-.login {
-    color: white;
-    text-decoration: none;
-    margin-left: auto;
-    display: flex;
-    align-items: center;
-}
-
-.signup {
-    color: white;
-    text-decoration: none;
-    margin-left: 2px;
-}
-
-body {
-    background-color: #F5F5F5
-}
-
-.header {
-    background-color: white; 
-    padding: 15px 0px;
-    display: flex;
-    align-items: center;
-    font-family: 'Arial', sans-serif; /* Match font to the design */
-    font-size: 15px;
-    position: absolute;
-    bottom:2;
-    width: 100%;
-    max-width:100%;
-}
-
-.logo img {
-    margin-left: 50px;
-    width: 150px;
-    height: auto;
-}
-
+/* header */
 .cart {
     color: navy ;
-    margin-left: 14px;
+    margin-left: -925px;
+    margin-top: 4px;
     white-space: nowrap;
     font-size: 24px;
-    margin-bottom: 8px;
     font-family: Arial, Helvetica, sans-serif
 }
 
 .faq {
-    color: navy ;
-    margin-left: 925px;
-    font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: underline
+    margin-top: 8px;
 }
 
 /* cart itself */
 
 .cart-container {
-    margin-top: 100px;
+    margin-top: 20px;
     padding: 20px;
     background-color: #f9f9f9;
 }
@@ -146,7 +83,7 @@ body {
     cursor: pointer;
 }
 
-/* Summary Section */
+/* summary section */
 .summary {
     display: flex;
     justify-content: space-between;
@@ -378,92 +315,64 @@ body {
     margin-top: -15px;
 }
 
-/* Media Queries for responsiveness */
+/* Media Queries */
 @media screen and (max-width: 768px) {
-    .header {
-        padding: 10px 20px;
+    /* General styles to prevent horizontal scrolling */
+    html, body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+        width: 100%; /* Ensure full-page width fits within the viewport */
     }
 
-    .search-bar input {
-        width: 200px;
+    /* Stacking for listings and listings-2 */
+    .listings, .listings-2 {
+        display: flex; /* Ensure flexbox is applied */
+        flex-direction: column; /* Stack items vertically */
+        gap: 10px; /* Reduce spacing for smaller screens */
     }
 
-    .categories {
-        padding: 10px;
+    .listing-item, .listing-item-2 {
+        width: 100%; /* Full width for smaller screens */
     }
 
-    .category-item {
-        width: 100%;
-        margin-bottom: 20px;
+    /* Table responsiveness */
+    .table-container {
+        overflow-x: auto; /* Enable horizontal scrolling if necessary for tables */
+        margin: 0 10px; /* Add margin around the table */
     }
 
-    .listing-item {
-        width: 100%;
-        margin-left: 0;
+    table {
+        width: 100%; /* Fit the table to the screen width */
+        font-size: 14px; /* Adjust font size for readability */
     }
 
-    .listings {
-        padding: 10px;
-        margin: 10px 0;
+    table th, table td {
+        padding: 10px; /* Maintain readability while optimizing space */
+        word-wrap: break-word; /* Prevent text from overflowing */
     }
 }
 
-/* footer */
-footer {
-    background-color:  #ebecf0;
-    color: navy;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    text-align: center;
-    width: 100%;
-    position: absolute;
-    padding: 45px 0px;
-    margin-top: 25px;
-  }
-  
-  .bottom-bar {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-  
-  .customercare, .lazada, .customercare a, .lazada a {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    text-decoration: none;
-    color: navy 
-  }
-  
-  .customercare a:hover, .lazada a:hover {
-    text-decoration: underline;
-  }
-  
-  .copyright {
-    display: flex;
-    justify-content: center;
-    color: black    
-  }
-
-@media screen and (max-width: 1024px) {
-    .header {
-        padding: 15px 30px;
+@media screen and (max-width: 480px) {
+    html, body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden; /* Further ensure no horizontal scrolling */
     }
 
-    .logo img {
-        width: 130px;
+    .listings, .listings-2 {
+        gap: 5px; /* Further reduce spacing for very small screens */
     }
 
-    .category-item {
-        width: 45%;
+    .table-container {
+        margin: 0 5px; /* Reduce margins further for tight spaces */
     }
 
-    .listings {
-        padding: 15px;
-        margin: 10px 30px;
+    table {
+        font-size: 12px; /* Smaller font size for very small screens */
     }
 
-    .listing-item {
-        width: 48%;
+    table th, table td {
+        padding: 5px; /* Minimize padding */
     }
 }
