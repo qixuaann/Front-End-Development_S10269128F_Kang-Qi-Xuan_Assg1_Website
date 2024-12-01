@@ -1,8 +1,10 @@
+/* remove the gaps from the screen and the sides*/
 body, html {
     margin: 0;
     padding: 0;
 }
 
+/* the whole header part */
 .top-bar {
     background-color: #001b87; /* Blue color for the top bar */
     padding: 10px 15px;
@@ -319,207 +321,7 @@ body {
     text-decoration: none;
     color: black;
     font-size: 12px;
-    margin-top: -10px;
-}
-
-.listings h1:hover {
-   color: darkcyan;
-}
-
-.listing-content h2 {
-    font-weight: normal;
-    font-size: 16px;
-    color: #f5762a;
-    margin-top: -20px;
-}
-
-.listing-content h3 {
-    font-weight: normal;
-    font-size: 12px;
-    display: flex;
-    align-items: center;
-    margin-top: -15px;
-}
-
-.listing-content h3 img {
-    background-color: transparent;
-    width: 80px; 
-    height: auto;
-    margin-left: 50px;
-    margin-top: -16px;
-}
-
-.listing-content h4 {
-    font-weight: normal;
-    margin-left: 180px;
-    margin-top: -20px;
-    font-size: 10px;
-    color: #888
-}
-
-.listing-item {
-    font-size: 10px;
-    text-align: bottom;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #333;
-}
-
-.listing-item.phone, .listing-item.kpop, .listing-item.kpop2, .listing-item.shirt {
-    margin-left: 20px;
-}
-
-.listing-item.kpop2 h2 {
-    margin-top: -15px;
-}
-
-.listing-item.shirt h2 {
-    margin-top: -15px;
-}
-
-/* listings second row */
-.listings-head {
-    font-weight: normal;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 30px;
-    color:#888;
-    margin-left: 60px;
-}
-.listings {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    margin: 10px 40px;
-    margin-left: 40px;
-}
-
-.listing-item {
-    display: block;
-    width: 200px;
-    height: 310px;
-    padding: 15px;
-    background-color: white;
-    text-decoration: none;
-}
-
-.listing-item:hover {
-    box-shadow: 0 8px 16px lightgray;
-}
-
-.listing-item img {
-    width: 230px;
-    height: 200px;
-    margin-top: -15px;    
-    margin-left: -15px;
-    border-radius: 0%;
-}
-
-.listing-content h1, .listing-content a {
-    font-weight: normal;
-    text-decoration: none;
-    color: black;
-    font-size: 12px;
-    margin-top: -10px;
-}
-
-.listings h1:hover {
-   color: darkcyan;
-}
-
-.listing-content h2 {
-    font-weight: normal;
-    font-size: 16px;
-    color: #f5762a;
-    margin-top: -20px;
-}
-
-.listing-content h3 {
-    font-weight: normal;
-    font-size: 12px;
-    display: flex;
-    align-items: center;
-    margin-top: -15px;
-}
-
-.listing-content h3 img {
-    background-color: transparent;
-    width: 80px; 
-    height: auto;
-    margin-left: 50px;
-    margin-top: -16px;
-}
-
-.listing-content h4 {
-    font-weight: normal;
-    margin-left: 180px;
-    margin-top: -20px;
-    font-size: 10px;
-    color: #888
-}
-
-.listing-item {
-    font-size: 10px;
-    text-align: bottom;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #333;
-}
-
-.listing-item.phone, .listing-item.kpop, .listing-item.kpop2, .listing-item.shirt {
-    margin-left: 20px;
-}
-
-.listing-item.kpop2 h2 {
-    margin-top: -15px;
-}
-
-.listing-item.shirt h2 {
-    margin-top: -15px;
-}
-
-/* listings second row */
-
-.listings-head {
-    font-weight: normal;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 30px;
-    color:#888;
-    margin-left: 60px;
-}
-
-.listings {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    margin: 10px 40px;
-    margin-left: 40px;
-}
-
-.listing-item {
-    display: block;
-    width: 200px;
-    height: 310px;
-    padding: 15px;
-    background-color: white;
-    text-decoration: none;
-}
-
-.listing-item:hover {
-    box-shadow: 0 8px 16px lightgray;
-}
-
-.listing-item img {
-    width: 230px;
-    height: 200px;
-    margin-top: -15px;    
-    margin-left: -15px;
-    border-radius: 0%;
-}
-
-.listing-content h1, .listing-content a {
-    font-weight: normal;
-    text-decoration: none;
-    color: black;
-    font-size: 12px;
-    margin-top: -10px;
+    margin-top: 10px;
 }
 
 .listings h1:hover {
@@ -603,5 +405,65 @@ body {
     .listings {
         padding: 10px;
         margin: 10px 0;
+    }
+}
+
+/* footer */
+footer {
+    background-color:  #ebecf0;
+    color: navy;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    padding: 45px 0px;
+    margin-top: 25px;
+  }
+  
+  .bottom-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .customercare, .lazada, .customercare a, .lazada a {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-decoration: none;
+    color: navy 
+  }
+  
+  .customercare a:hover, .lazada a:hover {
+    text-decoration: underline;
+  }
+  
+  .copyright {
+    display: flex;
+    justify-content: center;
+    color: black    
+  }
+
+@media screen and (max-width: 1024px) {
+    .header {
+        padding: 15px 30px;
+    }
+
+    .logo img {
+        width: 130px;
+    }
+
+    .category-item {
+        width: 45%;
+    }
+
+    .listings {
+        padding: 15px;
+        margin: 10px 30px;
+    }
+
+    .listing-item {
+        width: 48%;
     }
 }
