@@ -1,4 +1,4 @@
-/* Top bar with blue background */
+/* the whole header part */
 .top-bar {
     background-color: #001b87; /* Blue color for the top bar */
     padding: 10px 15px;
@@ -39,8 +39,6 @@ body {
     background-color: #F5F5F5
 }
 
-
-/* Header section */
 .header {
     display: flex;
     justify-content: space-between;
@@ -94,25 +92,24 @@ body {
     margin-left: 20px;
 }
 
-/* Basic reset */
+/* reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Banner Container */
+/* banner stuff */
 .banner {
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: 400px;
+    height: 450px;
     background-color: #e7f3ff; /* Light blue */
     border-radius: 8px;
     margin-bottom: 20px;
 }
 
-/* Slides */
 .banner-slide {
     display: none; /* Hide all slides */
     opacity: 0;
@@ -124,13 +121,11 @@ body {
     opacity: 1;
 }
 
-/* Image Styling */
 .banner-slide img {
     width: 100%;
     height: auto;
 }
 
-/* Controls */
 .banner-controls {
     position: absolute;
     top: 50%;
@@ -155,7 +150,7 @@ body {
 }
 
 
-/* Categories layout */
+/* categories of lazada */
 .categories {
     display: flex;
     justify-content: space-between;
@@ -237,7 +232,7 @@ body {
     font-size: 40px;
 }
 
-/* Listings */
+/* listings */
 .listings-head {
     font-weight: normal;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -398,7 +393,7 @@ body {
     }
 }
 
-
+/* footer */
 footer {
     background-color:  #ebecf0;
     color: navy;
