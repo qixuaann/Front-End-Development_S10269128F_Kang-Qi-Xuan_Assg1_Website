@@ -1,3 +1,4 @@
+/* the whole top part */
 .top-bar {
     background-color: white;
     padding: 15px 0px;
@@ -33,6 +34,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* the main signup part */
 body {
     font-family: Arial, sans-serif;
     display: flex;
@@ -119,6 +121,7 @@ p a:hover {
     text-decoration: underline;
 }
 
+/* footer */
 footer {
     background-color: #ebecf0;
     color: navy;
