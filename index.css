@@ -1,117 +1,21 @@
-/* the whole header part */
-.top-bar {
-    background-color: #001b87; /* Blue color for the top bar */
-    padding: 10px 15px;
-    display: flex;
-    align-items: center;
-    font-family: 'Arial', sans-serif; /* Match font to the design */
-    font-size: 15px;
-}
-
-.top-link {
-    color: white;
-    text-decoration: none;
-    margin-left: 5px;
-}
-
-.social-icon {
-    width: 20px; 
-    height: 20px;
-    margin-top: 5px;
-    margin-left: 4px;
-}
-
-.login {
-    color: white;
-    text-decoration: none;
-    margin-left: auto;
-    display: flex;
-    align-items: center;
-}
-
-.signup {
-    color: white;
-    text-decoration: none;
-    margin-left: 2px;
-}
-
 body {
-    background-color: #F5F5F5
-}
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: left;
-    padding: 20px 40px;
-    background-color: #fff;
-    border-bottom: 1px solid #ddd;
+    background-color: #F5F5F5;
     font-family: 'Arial', sans-serif;
 }
 
-.logo {
-    display: flex;
-    justify-content: center; /* Centers horizontally */
-    align-items: center; /* Centers vertically */
-}
-
-.logo img {
-    width: 150px;
-    height: auto;
-}
-
-.logo h1 {
-    font-size: 24px;
-    margin-left: 10px;
-    font-weight: bold;
-    color: #333;
-}
-
-.search-bar {
-    display: flex;
-    align-items: center;
-}
-
-.search-bar input {
-    padding: 8px;
-    font-size: 16px;
-    width: 300px;
-    margin-right: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.search-button img {
-    width: 24px;
-    height: 24px;
-}
-
-.cart img {
-    width: 50px;
-    height: 50px;
-    margin-left: 20px;
-}
-
-/* reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* banner stuff */
+/* banner */
 .banner {
     position: relative;
     overflow: hidden;
     width: 100%;
     height: 450px;
-    background-color: #e7f3ff; /* Light blue */
+    background-color: #e7f3ff;
     border-radius: 8px;
     margin-bottom: 20px;
 }
 
 .banner-slide {
-    display: none; /* Hide all slides */
+    display: none;
     opacity: 0;
     transition: opacity 1s ease-in-out;
 }
@@ -149,8 +53,7 @@ body {
     background-color: rgba(255, 255, 255, 1);
 }
 
-
-/* categories of lazada */
+/* categories (Lazmall + RedMart + Vouchers) */
 .categories {
     display: flex;
     justify-content: space-between;
@@ -165,12 +68,12 @@ body {
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 8px;
-    box-shadow: 0 2px 4px #ddd; 
+    box-shadow: 0 2px 4px #ddd;
     margin-right: 10px;
 }
 
 .category-item img {
-    width: 150px; 
+    width: 150px;
     height: auto;
     margin-bottom: 10px;
 }
@@ -183,7 +86,7 @@ body {
 
 .voucher img {
     margin-left: 220px;
-    margin-top: -60px;
+    margin-top: -90px;
     width: 125px;
 }
 
@@ -198,6 +101,7 @@ body {
 }
 
 .voucher-text {
+    margin-top: -20px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -208,11 +112,11 @@ body {
 }
 
 .redmart-text p:hover {
-    color: #ee4054
+    color: #ee4054;
 }
 
 .voucher-text p:hover {
-    color: #f58523
+    color: #f58523;
 }
 
 .lazmall-text, .redmart-text, .voucher-text {
@@ -237,9 +141,10 @@ body {
     font-weight: normal;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 30px;
-    color:#888;
+    color: #888;
     margin-left: 60px;
 }
+
 .listings {
     display: flex;
     justify-content: space-between;
@@ -263,20 +168,17 @@ body {
 .listing-item img {
     width: 249px;
     height: 250px;
-    margin-top: -15px;    
+    margin-top: -15px;
     margin-left: -15px;
 }
 
-.listing-content h1, .listing-content a {
+.listing-content h1,
+.listing-content a {
     font-weight: normal;
     text-decoration: none;
     color: black;
     font-size: 12px;
-    margin-top: 5px;
-}
-
-.listings h1:hover {
-   color: darkcyan;
+    margin-top: -4px;
 }
 
 .listing-content h2 {
@@ -295,89 +197,63 @@ body {
 }
 
 .listing-content h3 img {
-    width: 80px; 
+    width: 80px;
     height: auto;
     margin-left: 50px;
-    margin-top: -30px;
+    margin-top: -40px;
 }
 
 .listing-content h4 {
     font-weight: normal;
     margin-left: 190px;
-    margin-top: -18px;
+    margin-top: -30px;
     font-size: 10px;
-    color: #888
+    color: #888;
 }
 
-.listing-item {
-    font-size: 10px;
-    text-align: bottom;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #333;
-}
-
-.listing-item.phone, .listing-item.kpop, .listing-item.kpop2, .listing-item.shirt {
-    margin-left: 20px;
-}
-
-.listing-item.kpop2 h2 {
-    margin-top: -15px;
-}
-
-.listing-item.shirt h2 {
-    margin-top: -15px;
-}
-
-/* Media Queries for responsiveness */
+/* media queries */
 @media screen and (max-width: 768px) {
     .header {
-        padding: 10px 20px;
+        flex-direction: column;
+        align-items: center;
     }
 
     .search-bar input {
-        width: 200px;
+        width: 100%;
     }
 
     .categories {
+        flex-direction: column;
         padding: 10px;
     }
 
     .category-item {
         width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
+    }
+
+    .listings {
+        flex-direction: column;
+        padding: 10px;
     }
 
     .listing-item {
         width: 100%;
-        margin-left: 0;
-    }
-
-    .listings {
-        padding: 10px;
-        margin: 10px 0;
+        margin-bottom: 20px;
     }
 }
 
 @media screen and (max-width: 480px) {
     .header {
-        flex-direction: column;
-        text-align: center;
+        padding: 5px 10px;
     }
 
     .logo img {
-        width: 120px;
-    }
-
-    .search-bar input {
-        width: 100%;
+        width: 100px;
     }
 
     .banner {
-        height: 300px;
-    }
-
-    .banner-controls button {
-        font-size: 16px;
+        height: 140px;
     }
 
     .categories {
@@ -385,70 +261,19 @@ body {
     }
 
     .category-item {
-        width: 100%;
-    }
-
-    .footer {
-        font-size: 12px;
-    }
-}
-
-/* footer */
-footer {
-    background-color:  #ebecf0;
-    color: navy;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    text-align: center;
-    width: 100%;
-    position: absolute;
-    padding: 45px 0px;
-    margin-top: 25px;
-  }
-  
-  .bottom-bar {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-  
-  .customercare, .lazada, .customercare a, .lazada a {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    text-decoration: none;
-    color: navy 
-  }
-  
-  .customercare a:hover, .lazada a:hover {
-    text-decoration: underline;
-  }
-  
-  .copyright {
-    display: flex;
-    justify-content: center;
-    color: black    
-  }
-
-@media screen and (max-width: 1024px) {
-    .header {
-        padding: 15px 30px;
-    }
-
-    .logo img {
-        width: 130px;
-    }
-
-    .category-item {
-        width: 45%;
+        padding: 10px;
     }
 
     .listings {
-        padding: 15px;
-        margin: 10px 30px;
+        padding: 5px;
     }
 
-    .listing-item {
-        width: 48%;
+    footer {
+        font-size: 12px;
+        padding: 20px 5px;
+    }
+
+    .listing-content h1, .listing-content h2 {
+        font-size: 12px;
     }
 }
