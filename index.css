@@ -208,10 +208,8 @@ body {
     color: #888;
 }
 
-/* Media Queries for smaller screens (phones) */
+/* media queries */
 @media screen and (max-width: 767px) {
-
-    /* Banner Controls */
     .banner-controls {
         flex-direction: column; /* Stack buttons vertically */
         align-items: center;
@@ -224,7 +222,6 @@ body {
         padding: 0.4rem;
     }
 
-    /* Categories */
     .categories {
         flex-direction: column;
         margin: 0;
@@ -242,7 +239,6 @@ body {
         width: 5rem;
     }
 
-    /* Listings */
     .listings {
         flex-direction: column; /* Stack listings vertically */
         margin: 0 1rem;
@@ -281,16 +277,12 @@ body {
         font-size: 0.75rem;
     }
 
-    /* Ensure "Just For You" stays above listings */
     .listings-head {
         margin-top: 1rem;
     }
 }
 
-/* Additional Breakpoint for Tablets (768px to 1024px) */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-
-    /* Categories */
     .categories {
         flex-direction: row;
         margin: 0 2rem;
@@ -306,7 +298,6 @@ body {
         width: 8rem;
     }
 
-    /* Listings */
     .listings {
         flex-direction: row;
         margin: 0 2rem;
