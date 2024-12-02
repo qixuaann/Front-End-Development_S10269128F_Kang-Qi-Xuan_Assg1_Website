@@ -39,6 +39,7 @@ Provide insights into Lazada’s market strategies and customer engagement tools
 This project is based on:
 
 Publicly Available Information: Data from Lazada's website and promotional materials.
+Additionally, Inspiration was taken from the interface of Shopee.
 Screenshots and Observations: Screenshots of various website features.
 Third-Party Reports: Market analysis reports and articles on Lazada.
 ## Usage
