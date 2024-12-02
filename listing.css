@@ -525,9 +525,8 @@
     margin-top: -15px;
 }
 
-/* Mobile Styles for Screens up to 768px */
+/* media queries */
 @media (max-width: 768px) {
-    /* General Product Container */
     .product-container {
         flex-direction: column;
         max-width: 95%;
@@ -538,12 +537,11 @@
     .product-image {
         max-width: 100%;
         align-items: center;
-        position: relative; /* To position arrows near thumbnails */
+        position: relative; 
     }
     .product-image img {
         max-width: 90%;
     }
-    /* Details */
     .details {
         padding-left: 0;
         font-size: 0.9rem;
@@ -554,18 +552,15 @@
     .current-price {
         font-size: 1.5rem;
     }
-    /* Color Options */
     .color-options {
         margin-left: 0;
         margin-top: 1rem;
         flex-wrap: wrap;
     }
-    /* Quantity */
     .quantity {
         margin: 1rem 0;
         justify-content: center;
     }
-    /* Actions */
     .actions {
         margin: 0;
         flex-wrap: wrap;
@@ -575,15 +570,13 @@
     .actions button {
         padding: 0.5rem 1.5rem;
     }
-    /* Remove Toggle Button */
     #toggle-button {
         display: none;
     }
-    /* Arrows Beside Thumbnails */
     .prev,
     .next {
         position: absolute;
-        top: 50%; /* Center arrows vertically relative to thumbnails */
+        top: 50%; 
         transform: translateY(-50%);
         background-color: rgba(0, 0, 0, 0.5);
         color: white;
@@ -594,18 +587,18 @@
         z-index: 2;
     }
     .prev {
-        left: -30px; /* Place arrow just outside the left edge of the thumbnails */
+        left: -30px;
     }
     .next {
-        right: -30px; /* Place arrow just outside the right edge of the thumbnails */
+        right: -30px; 
     }
-    /* Sponsored Listings - Stacked as Column */
+
     .header-of-sponsored-listings {
         display: flex;
         flex-direction: column;
         margin: 1rem auto;
         width: 100%;
-        order: -1; /* Position above description container */
+        order: -1; 
     }
     .listing2 {
         display: flex;
@@ -621,12 +614,12 @@
         width: 100%;
         height: auto;
     }
-    /* Description Container */
+
     .description-container {
         max-width: 100%;
         margin: 1rem auto;
         padding: 1rem;
-        order: 1; /* Position below listings */
+        order: 1; 
     }
     .description-container img {
         width: 100%;
@@ -647,26 +640,26 @@
         font-size: 1.2rem;
         margin: 0.5rem 0;
     }
-    /* Listings in a Column - Adjusted for Mobile */
+
     .listings {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin: 1rem auto;
         width: 100%;
-        max-width: 90%; /* Constrain width for mobile screens */
-        padding: 0.5rem; /* Add spacing */
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Visual emphasis */
-        border-radius: 8px; /* Rounded corners */
-        background-color: #fff; /* Optional: Background color */
+        max-width: 90%; 
+        padding: 0.5rem; 
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        background-color: #fff; 
     }
     .listing-item {
-        width: 100%; /* Fit items within container */
-        margin: 0.5rem 0; /* Smaller spacing */
+        width: 100%; 
+        margin: 0.5rem 0; 
     }
     .listing-item img {
         width: 100%;
         height: auto;
-        border-radius: 5px; /* Aesthetic rounding */
+        border-radius: 5px;
     }
 }
