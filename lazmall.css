@@ -99,15 +99,13 @@
 
 /* Responsive design for small screens (phones) */
 @media (max-width: 768px) {
-    /* Banner adjustments */
     .lazmall-banner img {
         height: auto;
         margin-bottom: 1rem;
     }
 
-    /* Listings first row adjustments */
     .listings-head {
-        font-size: 1.2rem; /* Reduced size */
+        font-size: 1.2rem; 
         margin-left: 1rem;
     }
 
@@ -128,37 +126,33 @@
 
     .listing-content h1,
     .listing-content a {
-        font-size: 0.6rem; /* Smaller text size */
+        font-size: 0.6rem; 
     }
 
     .listing-content h2 {
-        font-size: 0.8rem; /* Smaller size */
+        font-size: 0.8rem; 
     }
 
     .listing-content h3 {
-        font-size: 0.6rem; /* Smaller size */
+        font-size: 0.6rem;
     }
 
     .listing-content h4 {
-        font-size: 8px; /* Smaller font size */
+        font-size: 8px; 
     }
 
-    /* Listings second row adjustments */
     .listings2 {
         display: block;
         margin-left: 0;
     }
 }
 
-/* Further adjustments for very small devices (e.g., mobile phones) */
 @media (max-width: 480px) {
-    /* Banner adjustments */
     .lazmall-banner img {
         width: 100%;
         margin-bottom: 1.5rem;
     }
 
-    /* Listings first row adjustments */
     .listings-head {
         font-size: 1rem; /* Even smaller for very small devices */
     }
