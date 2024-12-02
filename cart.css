@@ -315,82 +315,79 @@ body, html {
     margin-top: -15px;
 }
 
-/* Media Queries */
+/* media queries */
 @media screen and (max-width: 768px) {
-    /* Listings Stack on Mobile */
     .listings,
     .listings2 {
         display: flex;
-        flex-direction: column; /* Stack listings vertically */
-        align-items: center; /* Center align for aesthetics */
-        gap: 5px; /* Reduced spacing between stacked listings */
-        padding: 5px; /* Reduced padding for mobile */
-        margin: 0; /* Remove extra margins */
+        flex-direction: column; 
+        align-items: center; 
+        gap: 5px;
+        padding: 5px; 
+        margin: 0; 
     }
 
     .listing-item {
-        width: 80%; /* Minimized container width for mobile */
-        height: auto; /* Adjust height to fit content */
-        padding: 5px; /* Further reduced padding */
-        margin-bottom: 8px; /* Space between items */
+        width: 80%; 
+        height: auto; 
+        padding: 5px; 
+        margin-bottom: 8px;
     }
 
     .listing-item img {
-        width: 100%; /* Full width for better fit */
-        height: auto; /* Maintain aspect ratio */
-        margin: 0; /* Remove margins around images */
+        width: 100%;
+        height: auto; 
+        margin: 0; 
     }
 
     .listings-head {
-        font-size: 16px; /* Smaller font size for mobile */
+        font-size: 16px; 
         margin: 8px 0;
-        text-align: center; /* Center align heading */
+        text-align: center;
     }
 
-    /* Table Responsiveness */
     .table-container {
-        overflow-x: auto; /* Allow horizontal scrolling for wide tables */
-        margin: 0 5px; /* Add margin around table */
+        overflow-x: auto; 
+        margin: 0 5px; 
     }
 
     table {
-        width: 100%; /* Fit table to screen width */
-        font-size: 12px; /* Smaller font size for better fit on small screens */
+        width: 100%;
+        font-size: 12px; 
     }
 
     table th, table td {
-        padding: 4px; /* Reduced padding */
-        word-wrap: break-word; /* Prevent text from overflowing */
+        padding: 4px; 
+        word-wrap: break-word;
     }
 }
 
 @media screen and (max-width: 480px) {
-    /* Further optimizations for very small screens */
     .listings,
     .listings2 {
-        gap: 3px; /* Further reduced spacing for very small screens */
+        gap: 3px;
     }
 
     .listing-item {
-        width: 95%; /* Maximize item width for very small screens */
-        padding: 3px; /* Minimized padding */
-        margin-bottom: 5px; /* Minimized space between items */
+        width: 95%; 
+        padding: 3px; 
+        margin-bottom: 5px; 
     }
 
     .listing-item img {
-        width: 100%; /* Full width for better fit */
-        height: auto; /* Maintain aspect ratio */
+        width: 100%; 
+        height: auto; 
     }
 
     .listings-head {
-        font-size: 14px; /* Further reduced font size for smaller screens */
+        font-size: 14px; 
     }
 
     table {
-        font-size: 10px; /* Smaller font size for very small screens */
+        font-size: 10px; 
     }
 
     table th, table td {
-        padding: 3px; /* Minimized padding for table cells */
+        padding: 3px; 
     }
 }
