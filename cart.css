@@ -7,8 +7,8 @@ body, html {
 /* header */
 .cart {
     color: navy ;
-    margin-left: -925px;
-    margin-top: 4px;
+    margin-left: -61rem;
+    margin-top: 0.3rem;
     white-space: nowrap;
     font-size: 24px;
     font-family: Arial, Helvetica, sans-serif
@@ -317,62 +317,71 @@ body, html {
 
 /* Media Queries */
 @media screen and (max-width: 768px) {
-    /* General styles to prevent horizontal scrolling */
-    html, body {
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden; /* Prevent horizontal scrolling */
-        width: 100%; /* Ensure full-page width fits within the viewport */
+    /* Listings Stack on Mobile */
+    .listings,
+    .listings2 {
+        display: flex;
+        flex-direction: column; /* Stack listings vertically */
+        align-items: center; /* Center align for aesthetics */
+        gap: 10px; /* Reduced spacing between stacked listings */
+        padding: 10px; /* Reduced padding for mobile */
+        margin: 0; /* Remove extra margins */
     }
 
-    /* Stacking for listings and listings-2 */
-    .listings, .listings-2 {
-        display: flex; /* Ensure flexbox is applied */
-        flex-direction: column; /* Stack items vertically */
-        gap: 10px; /* Reduce spacing for smaller screens */
+    .listing-item {
+        width: 80%; /* Minimized container width for mobile */
+        height: auto; /* Adjust height to fit content */
+        padding: 8px; /* Reduced padding */
+        margin-bottom: 10px; /* Space between items */
     }
 
-    .listing-item, .listing-item-2 {
-        width: 100%; /* Full width for smaller screens */
+    .listing-item img {
+        width: 100%; /* Full width for better fit */
+        height: auto; /* Maintain aspect ratio */
+        margin: 0; /* Remove margins around images */
     }
 
-    /* Table responsiveness */
+    .listings-head {
+        font-size: 16px; /* Smaller font size for mobile */
+        margin: 10px 0;
+        text-align: center; /* Center align heading */
+    }
+
+    /* Table Responsiveness */
     .table-container {
-        overflow-x: auto; /* Enable horizontal scrolling if necessary for tables */
-        margin: 0 10px; /* Add margin around the table */
+        overflow-x: auto; /* Allow horizontal scrolling for wide tables */
+        margin: 0 10px; /* Add margin around table */
     }
 
     table {
-        width: 100%; /* Fit the table to the screen width */
-        font-size: 14px; /* Adjust font size for readability */
+        width: 100%; /* Fit table to screen width */
+        font-size: 12px; /* Smaller font size for better fit on small screens */
     }
 
     table th, table td {
-        padding: 10px; /* Maintain readability while optimizing space */
+        padding: 6px; /* Further reduced padding for mobile */
         word-wrap: break-word; /* Prevent text from overflowing */
     }
 }
 
 @media screen and (max-width: 480px) {
-    html, body {
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden; /* Further ensure no horizontal scrolling */
+    /* Further optimizations for very small screens */
+    .listings,
+    .listings2 {
+        gap: 5px; /* Reduce spacing for very small screens */
     }
 
-    .listings, .listings-2 {
-        gap: 5px; /* Further reduce spacing for very small screens */
-    }
-
-    .table-container {
-        margin: 0 5px; /* Reduce margins further for tight spaces */
+    .listing-item {
+        width: 100%; /* Full width for very small screens */
+        padding: 6px; /* Further reduce padding */
+        margin-bottom: 5px; /* Minimized space between items */
     }
 
     table {
-        font-size: 12px; /* Smaller font size for very small screens */
+        font-size: 10px; /* Smaller font size for very small screens */
     }
 
     table th, table td {
-        padding: 5px; /* Minimize padding */
+        padding: 4px; /* Minimized padding */
     }
 }
