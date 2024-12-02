@@ -323,16 +323,16 @@ body, html {
         display: flex;
         flex-direction: column; /* Stack listings vertically */
         align-items: center; /* Center align for aesthetics */
-        gap: 10px; /* Reduced spacing between stacked listings */
-        padding: 10px; /* Reduced padding for mobile */
+        gap: 5px; /* Reduced spacing between stacked listings */
+        padding: 5px; /* Reduced padding for mobile */
         margin: 0; /* Remove extra margins */
     }
 
     .listing-item {
         width: 80%; /* Minimized container width for mobile */
         height: auto; /* Adjust height to fit content */
-        padding: 8px; /* Reduced padding */
-        margin-bottom: 10px; /* Space between items */
+        padding: 5px; /* Further reduced padding */
+        margin-bottom: 8px; /* Space between items */
     }
 
     .listing-item img {
@@ -343,14 +343,14 @@ body, html {
 
     .listings-head {
         font-size: 16px; /* Smaller font size for mobile */
-        margin: 10px 0;
+        margin: 8px 0;
         text-align: center; /* Center align heading */
     }
 
     /* Table Responsiveness */
     .table-container {
         overflow-x: auto; /* Allow horizontal scrolling for wide tables */
-        margin: 0 10px; /* Add margin around table */
+        margin: 0 5px; /* Add margin around table */
     }
 
     table {
@@ -359,7 +359,7 @@ body, html {
     }
 
     table th, table td {
-        padding: 6px; /* Further reduced padding for mobile */
+        padding: 4px; /* Reduced padding */
         word-wrap: break-word; /* Prevent text from overflowing */
     }
 }
@@ -368,13 +368,22 @@ body, html {
     /* Further optimizations for very small screens */
     .listings,
     .listings2 {
-        gap: 5px; /* Reduce spacing for very small screens */
+        gap: 3px; /* Further reduced spacing for very small screens */
     }
 
     .listing-item {
-        width: 100%; /* Full width for very small screens */
-        padding: 6px; /* Further reduce padding */
+        width: 95%; /* Maximize item width for very small screens */
+        padding: 3px; /* Minimized padding */
         margin-bottom: 5px; /* Minimized space between items */
+    }
+
+    .listing-item img {
+        width: 100%; /* Full width for better fit */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .listings-head {
+        font-size: 14px; /* Further reduced font size for smaller screens */
     }
 
     table {
@@ -382,6 +391,6 @@ body, html {
     }
 
     table th, table td {
-        padding: 4px; /* Minimized padding */
+        padding: 3px; /* Minimized padding for table cells */
     }
 }
