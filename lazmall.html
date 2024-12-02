@@ -1,259 +1,173 @@
-/* banner */
-.lazmall-banner img {
-    position: relative;
-    overflow: hidden;
-    width: 1410px;
-    height: 500px;
-    background-color: #e7f3ff; /* Light blue */
-    border-radius: 8px;
-    margin-bottom: 20px;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-/* listings first row */
-.listings-head {
-    font-weight: normal;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 30px;
-    color:#888;
-    margin-left: 60px;
-}
-.listings {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    margin: 10px 40px;
-    margin-left: 40px;
-}
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lazmall</title>
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="lazmall.css">
+    </head>
 
-.listing-item {
-    display: block;
-    width: 200px;
-    height: 310px;
-    padding: 15px;
-    background-color: white;
-    text-decoration: none;
-}
+    <body>
+        <!-- Top bar -->
+        <div class="top-bar">
+            <a href="#" class="top-link">Download |</a>
+            <a href="#" class="top-link">Start Selling |</a>
+            <span class="top-link">Follow Us On</span>
+            <a href="https://www.instagram.com/lazada_sg/?hl=en" target="_blank"><img src="images/instagram-logo.webp" alt="Instagram Logo" class="social-icon"></a>
+            <a href="https://www.facebook.com/LazadaSingapore/" target="_blank"><img src="images/facebook-logo.webp" alt="Facebook Logo" class="social-icon"></a>
+            <a href="login.html" class="login">Login |</a>
+            <a href="signup.html" class="signup">Sign Up</a>
+        </div>
 
-.listing-item:hover {
-    box-shadow: 0 8px 16px lightgray;
-}
+        <header class="header">
+            <div class="logo">
+                <a href=index.html><img src="images/lazmall-logo.png" alt="Lazmall Logo"></a>  
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search in Lazada">
+                <button class="search-button">
+                    <img src="images/search-icon.webp" alt="Search Icon">
+                </button>
+                <div class="cart">
+                    <a href=cart.html><img src="images/shopping-cart.png" alt="Shopping Cart"></a>
+                </div>
+            </div>
+        </header>
 
-.listing-item img {
-    width: 230px;
-    height: 200px;
-    margin-top: -15px;    
-    margin-left: -15px;
-    border-radius: 0%;
-}
+        <!-- Banner + Listings -->
+        <main class="main-content">
+            <div class="lazmall-banner">
+                <img src="images/lazmall-banner.png" alt="banner for lazmall">
 
-.listing-content h1, .listing-content a {
-    font-weight: normal;
-    text-decoration: none;
-    color: black;
-    font-size: 12px;
-    margin-top: -10px;
-}
+            <span class="listings-head">Just For You</span>
+            <div class="listings">
+                <div class="listing-item watch">
+                    <a href=listing.html><img src="images/listing-watch.jpeg" alt="Luxury Watch"></a>
+                    <div class="listing-content">
+                        <a href=listing.html><h1>Luxury F91W Band Watch Waterproof Stainless Steel Sports Watches</h1></a>
+                        <br><h2>$56.00</h2><br>
+                        <h3>35 sold |</h3>
+                        <h3><img src="images/4-stars.png" alt="4 stars"></h3>
+                        <h4>China</h4>
+                    </div>
+                </div>
+                <div class="listing-item phone">
+                    <a href=#><img src="images/listing-iphone1.jpg" alt="IPhone"></a>
+                    <div class="listing-content">
+                        <a href=#><h1>Brand New Iphone 16 Pro Max Plus Real!! Authenticated</h1></a>
+                        <br><h2>$1450.00</h2><br>
+                        <h3>32 sold |</h3>
+                        <h3><img src="images/4-stars.png" alt="4 stars"></h3>
+                        <h4>SG</h4>
+                    </div>
+                </div>
+                <div class="listing-item kpop">
+                    <a href=#><img src="images/listing-kpop1.jpg" alt="Kpop albums"></a>
+                    <div class="listing-content">
+                        <a href=#><h1>SEVENTEEN 4th Album Repackage 'SECTOR 17' [NEW BEGINNING Ver.]</h1></a>
+                        <br><h2>$43.00</h2><br>
+                        <h3>87 sold |</h3>
+                        <h3><img src="images/4-stars.png" alt="4 stars"></h3>
+                        <h4>China</h4>
+                    </div>
+                </div>
+                <div class="listing-item kpop2">
+                    <a href=#><img src="images/listing-kpop2.jpg" alt="Kpop albums"></a>
+                    <div class="listing-content">
+                        <a href=#><h1>[LOCAL!!] SEVENTEEN 12th Mini Album 'SPILL THE FEELS' CARAT Ver. (13 Versions Random)</h1></a>
+                        <br><h2>$55.00</h2><br>
+                        <h3>85 sold |</h3>
+                        <h3><img src="images/4-stars.png" alt="4 stars"></h3>
+                        <h4>SG</h4>
+                    </div>
+                </div>
+                <div class="listing-item shirt">
+                    <a href=#><img src="images/listing-shirt1.jpg" alt="shirt"></a>
+                    <div class="listing-content">
+                        <a href=#><h1>New Mens T-Shirt Summer Listing Fashion Printed Casual Man's Slim Fit Short-Sleeve T Shirt</h1></a>
+                        <br><h2>$22.00</h2><br>
+                        <h3>23 sold |</h3>
+                        <h3><img src="images/4-stars.png" alt="4 stars"></h3>
+                        <h4>USA</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="listings2">
+                <div class="listing-item montessori-object">
+                    <a href=#><img src="images/montessori-object.jpg" alt="Object For Kids"></a>
+                    <div class="listing-content">
+                        <a href=listing.html><h1>Montessori Object Permanence Box</h1></a>
+                        <br><h2>$28.00</h2><br>
+                        <h3>29 sold |</h3>
+                        <h3><img src="images/4-stars.png" alt="4 stars"></h3>
+                        <h4>China</h4>
+                    </div>
+                </div>
+                <div class="listing-item phone">
+                    <a href=#><img src="images/iphone-2.jpg" alt="IPhone"></a>
+                    <div class="listing-content">
+                        <a href=#><h1>[ROSE GOLD]Brand New Iphone 16 Pro Max Plus Real!! Authenticated</h1></a>
+                        <br><h2>$1450.00</h2><br>
+                        <h3>32 sold |</h3>
+                        <h3><img src="images/4-stars.png" alt="4 stars"></h3>
+                        <h4>SG</h4>
+                    </div>
+                </div>
+                <div class="listing-item kpop">
+                    <a href=#><img src="images/svt-fml.jpg" alt="Kpop albums"></a>
+                    <div class="listing-content">
+                        <a href=#><h1>SEVENTEEN 10th Mini Album 'FML' ALL VERSIONS [LOCAL FAST DELIVERY]</h1></a>
+                        <br><h2>$43.00</h2><br>
+                        <h3>87 sold |</h3>
+                        <h3><img src="images/4-stars.png" alt="4 stars"></h3>
+                        <h4>China</h4>
+                    </div>
+                </div>
+                <div class="listing-item kpop2">
+                    <a href=#><img src="images/svt-righthere.webp" alt="Kpop albums"></a>
+                    <div class="listing-content">
+                        <a href=#><h1>[LOCAL!!] SEVENTEEN IS RIGHT HERE ALBUM 2 VERSIONS!!!</h1></a>
+                        <br><h2>$55.00</h2><br>
+                        <h3>85 sold |</h3>
+                        <h3><img src="images/4-stars.png" alt="4 stars"></h3>
+                        <h4>SG</h4>
+                    </div>
+                </div>
+                <div class="listing-item shirt">
+                    <a href=#><img src="images/baby-tee.jpg" alt="shirt"></a>
+                    <div class="listing-content">
+                        <a href=#><h1>New Woman T-Shirt Summer Listing Fashion Printed Casual Man's Slim Fit Short-Sleeve T Shirt</h1></a>
+                        <br><h2>$22.00</h2><br>
+                        <h3>23 sold |</h3>
+                        <h3><img src="images/4-stars.png" alt="4 stars"></h3>
+                        <h4>USA</h4>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </main>
 
-.listings h1:hover {
-   color: darkcyan;
-}
+    </body>
 
-.listing-content h2 {
-    font-weight: normal;
-    font-size: 16px;
-    color: #f5762a;
-    margin-top: -20px;
-}
+    <footer>
+        <!-- Footer -->
+        <div class="bottom-bar">
+            <div class="customercare">
+            <h3>Customer Care</h3>
+            <a href="https://www.lazada.sg/helpcenter/" target="_blank">Lazada Help Center</a>
+            <a href="https://www.lazada.sg/helpcenter/payments/" target="_blank">How To Buy</a>
+            <a href="https://www.lazada.sg/helpcenter/how-do-i-return-an-item-13301.html" target="_blank">How To Return</a>
+            </div>
+            <div class="lazada">
+            <h3>Lazada</h3>
+            <a href="https://group.lazada.com/en/" target="_blank">About Lazada</a>
+            <a href="https://www.lazada.sg/affiliate/" target="_blank">Affiliate Program</a>
+            <a href="https://www.lazada.sg/sellonlazada?hybrid=1&wx_navbar_transparent=true&titleHidden=1&at_iframe=1" target="_blank">Sell On Lazada</a>
+            </div>
+        </div>
+        <span class="copyright">© 2024 Lazada. All Rights Reserved .</span>
+    </footer>
 
-.listing-content h3 {
-    font-weight: normal;
-    font-size: 12px;
-    display: flex;
-    align-items: center;
-    margin-top: -15px;
-}
-
-.listing-content h3 img {
-    background-color: transparent;
-    width: 80px; 
-    height: auto;
-    margin-left: 50px;
-    margin-top: -16px;
-}
-
-.listing-content h4 {
-    font-weight: normal;
-    margin-left: 180px;
-    margin-top: -20px;
-    font-size: 10px;
-    color: #888
-}
-
-.listing-item {
-    font-size: 10px;
-    text-align: bottom;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #333;
-}
-
-.listing-item.phone, .listing-item.kpop, .listing-item.kpop2, .listing-item.shirt {
-    margin-left: 20px;
-}
-
-.listing-item.kpop2 h2 {
-    margin-top: -15px;
-}
-
-.listing-item.shirt h2 {
-    margin-top: -15px;
-}
-
-/* listings second row */
-.listings2 {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    margin: 10px 40px;
-    margin-left: 40px;
-}
-
-.listing-item {
-    display: block;
-    width: 200px;
-    height: 310px;
-    padding: 15px;
-    background-color: white;
-    text-decoration: none;
-}
-
-.listing-item:hover {
-    box-shadow: 0 8px 16px lightgray;
-}
-
-.listing-item img {
-    width: 230px;
-    height: 200px;
-    margin-top: -15px;    
-    margin-left: -15px;
-    border-radius: 0%;
-}
-
-.listing-content h1, .listing-content a {
-    font-weight: normal;
-    text-decoration: none;
-    color: black;
-    font-size: 12px;
-    margin-top: -10px;
-}
-
-.listings h1:hover {
-   color: darkcyan;
-}
-
-.listing-content h2 {
-    font-weight: normal;
-    font-size: 16px;
-    color: #f5762a;
-    margin-top: -20px;
-}
-
-.listing-content h3 {
-    font-weight: normal;
-    font-size: 12px;
-    display: flex;
-    align-items: center;
-    margin-top: -15px;
-}
-
-.listing-content h3 img {
-    background-color: transparent;
-    width: 80px; 
-    height: auto;
-    margin-left: 50px;
-    margin-top: -16px;
-}
-
-.listing-content h4 {
-    font-weight: normal;
-    margin-left: 180px;
-    margin-top: -20px;
-    font-size: 10px;
-    color: #888
-}
-
-.listing-item {
-    font-size: 10px;
-    text-align: bottom;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #333;
-}
-
-.listing-item.phone, .listing-item.kpop, .listing-item.kpop2, .listing-item.shirt {
-    margin-left: 20px;
-}
-
-.listing-item.kpop2 h2 {
-    margin-top: -15px;
-}
-
-.listing-item.shirt h2 {
-    margin-top: -15px;
-}
-
-@media screen and (max-width: 480px) {
-    .header {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .logo img {
-        width: 120px;
-    }
-
-    .search-bar input {
-        width: 100%;
-    }
-
-    .banner {
-        height: 300px;
-    }
-
-    .banner-controls button {
-        font-size: 16px;
-    }
-
-    .categories {
-        padding: 5px;
-    }
-
-    .category-item {
-        width: 100%;
-    }
-
-    .footer {
-        font-size: 12px;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    .header {
-        padding: 15px 30px;
-    }
-
-    .logo img {
-        width: 130px;
-    }
-
-    .category-item {
-        width: 45%;
-    }
-
-    .listings {
-        padding: 15px;
-        margin: 10px 30px;
-    }
-
-    .listing-item {
-        width: 48%;
-    }
-}
+</html>
