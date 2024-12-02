@@ -2,258 +2,200 @@
 .lazmall-banner img {
     position: relative;
     overflow: hidden;
-    width: 1410px;
-    height: 500px;
+    width: 100%;
+    height: auto;
     background-color: #e7f3ff; /* Light blue */
-    border-radius: 8px;
-    margin-bottom: 20px;
+    border-radius: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 /* listings first row */
 .listings-head {
     font-weight: normal;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 30px;
-    color:#888;
-    margin-left: 60px;
+    font-size: 2rem;
+    color: #888;
+    margin-left: 3rem;
+    text-align: center;
 }
+
 .listings {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
-    margin: 10px 40px;
-    margin-left: 40px;
+    margin: 1rem 4rem;
 }
 
 .listing-item {
     display: block;
-    width: 200px;
-    height: 310px;
-    padding: 15px;
+    width: 17.44%;
+    height: auto;
+    padding: 0.94rem;
     background-color: white;
     text-decoration: none;
+    margin-bottom: 1rem;
 }
 
 .listing-item:hover {
-    box-shadow: 0 8px 16px lightgray;
+    box-shadow: 0 0.5rem 0.8rem lightgray;
 }
 
 .listing-item img {
-    width: 230px;
-    height: 200px;
-    margin-top: -15px;    
-    margin-left: -15px;
-    border-radius: 0%;
+    width: 100%;
+    height: 60%;
+    border-radius: 0;
 }
 
-.listing-content h1, .listing-content a {
+.listing-content h1,
+.listing-content a {
     font-weight: normal;
     text-decoration: none;
     color: black;
-    font-size: 12px;
-    margin-top: -10px;
+    font-size: 0.7rem;
 }
 
 .listings h1:hover {
-   color: darkcyan;
+    color: darkcyan;
 }
 
 .listing-content h2 {
     font-weight: normal;
-    font-size: 16px;
+    font-size: 0.9rem;
     color: #f5762a;
-    margin-top: -20px;
+    margin-top: -1.4rem;
 }
 
 .listing-content h3 {
     font-weight: normal;
-    font-size: 12px;
+    font-size: 0.7rem;
     display: flex;
     align-items: center;
-    margin-top: -15px;
 }
 
 .listing-content h3 img {
-    background-color: transparent;
-    width: 80px; 
+    width: 30%;
     height: auto;
-    margin-left: 50px;
-    margin-top: -16px;
+    margin-left: 2.8rem;
+    margin-top: -1.9rem;
+    background-color: transparent;
 }
 
 .listing-content h4 {
     font-weight: normal;
-    margin-left: 180px;
-    margin-top: -20px;
+    margin-left: 12rem;
+    margin-top: -0.9rem;
     font-size: 10px;
-    color: #888
-}
-
-.listing-item {
-    font-size: 10px;
-    text-align: bottom;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #333;
-}
-
-.listing-item.phone, .listing-item.kpop, .listing-item.kpop2, .listing-item.shirt {
-    margin-left: 20px;
-}
-
-.listing-item.kpop2 h2 {
-    margin-top: -15px;
-}
-
-.listing-item.shirt h2 {
-    margin-top: -15px;
+    color: #888;
 }
 
 /* listings second row */
 .listings2 {
+    width: 91.5%;
     display: flex;
     justify-content: space-between;
-    padding: 20px;
-    margin: 10px 40px;
-    margin-left: 40px;
+    padding: 1.4rem;
+    margin: -2rem 4rem;
+    margin-left: 2.55rem;
 }
 
-.listing-item {
-    display: block;
-    width: 200px;
-    height: 310px;
-    padding: 15px;
-    background-color: white;
-    text-decoration: none;
-}
-
-.listing-item:hover {
-    box-shadow: 0 8px 16px lightgray;
-}
-
-.listing-item img {
-    width: 230px;
-    height: 200px;
-    margin-top: -15px;    
-    margin-left: -15px;
-    border-radius: 0%;
-}
-
-.listing-content h1, .listing-content a {
-    font-weight: normal;
-    text-decoration: none;
-    color: black;
-    font-size: 12px;
-    margin-top: -10px;
-}
-
-.listings h1:hover {
-   color: darkcyan;
-}
-
-.listing-content h2 {
-    font-weight: normal;
-    font-size: 16px;
-    color: #f5762a;
-    margin-top: -20px;
-}
-
-.listing-content h3 {
-    font-weight: normal;
-    font-size: 12px;
-    display: flex;
-    align-items: center;
-    margin-top: -15px;
-}
-
-.listing-content h3 img {
-    background-color: transparent;
-    width: 80px; 
-    height: auto;
-    margin-left: 50px;
-    margin-top: -16px;
-}
-
-.listing-content h4 {
-    font-weight: normal;
-    margin-left: 180px;
-    margin-top: -20px;
-    font-size: 10px;
-    color: #888
-}
-
-.listing-item {
-    font-size: 10px;
-    text-align: bottom;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #333;
-}
-
-.listing-item.phone, .listing-item.kpop, .listing-item.kpop2, .listing-item.shirt {
-    margin-left: 20px;
-}
-
-.listing-item.kpop2 h2 {
-    margin-top: -15px;
-}
-
-.listing-item.shirt h2 {
-    margin-top: -15px;
-}
-
-@media screen and (max-width: 480px) {
-    .header {
-        flex-direction: column;
-        text-align: center;
+/* Responsive design for small screens (phones) */
+@media (max-width: 768px) {
+    /* Banner adjustments */
+    .lazmall-banner img {
+        height: auto;
+        margin-bottom: 1rem;
     }
 
-    .logo img {
-        width: 120px;
-    }
-
-    .search-bar input {
-        width: 100%;
-    }
-
-    .banner {
-        height: 300px;
-    }
-
-    .banner-controls button {
-        font-size: 16px;
-    }
-
-    .categories {
-        padding: 5px;
-    }
-
-    .category-item {
-        width: 100%;
-    }
-
-    .footer {
-        font-size: 12px;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    .header {
-        padding: 15px 30px;
-    }
-
-    .logo img {
-        width: 130px;
-    }
-
-    .category-item {
-        width: 45%;
+    /* Listings first row adjustments */
+    .listings-head {
+        font-size: 1.2rem; /* Reduced size */
+        margin-left: 1rem;
     }
 
     .listings {
-        padding: 15px;
-        margin: 10px 30px;
+        display: block;
+        margin: 1rem 2rem;
     }
 
     .listing-item {
-        width: 48%;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .listing-item img {
+        height: auto;
+        max-width: 100%;
+    }
+
+    .listing-content h1,
+    .listing-content a {
+        font-size: 0.6rem; /* Smaller text size */
+    }
+
+    .listing-content h2 {
+        font-size: 0.8rem; /* Smaller size */
+    }
+
+    .listing-content h3 {
+        font-size: 0.6rem; /* Smaller size */
+    }
+
+    .listing-content h4 {
+        font-size: 8px; /* Smaller font size */
+    }
+
+    /* Listings second row adjustments */
+    .listings2 {
+        display: block;
+        margin-left: 0;
+    }
+}
+
+/* Further adjustments for very small devices (e.g., mobile phones) */
+@media (max-width: 480px) {
+    /* Banner adjustments */
+    .lazmall-banner img {
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+    /* Listings first row adjustments */
+    .listings-head {
+        font-size: 1rem; /* Even smaller for very small devices */
+    }
+
+    .listings {
+        margin: 0.5rem 1rem;
+    }
+
+    .listing-item {
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    .listing-item img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .listing-content h1,
+    .listing-content a {
+        font-size: 0.5rem; /* Smaller text size */
+    }
+
+    .listing-content h2 {
+        font-size: 0.7rem; /* Smaller size */
+    }
+
+    .listing-content h3 {
+        font-size: 0.5rem; /* Smaller size */
+    }
+
+    .listing-content h4 {
+        font-size: 7px; /* Even smaller font size */
+    }
+
+    .listings2 {
+        display: block;
+        margin-left: 0;
     }
 }
